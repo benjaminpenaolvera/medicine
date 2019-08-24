@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.aqua-button {
+  background-color: #30beb4;
+  color: #fff;
+  /* cursor: pointer; */
+}
+
+.aqua-button:hover {
+  color: #fff;
+}
+
+.square-button {
+  border-radius: 5px;
+  font-family: 'NoirPro';
+  font-size: 12Px;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-indent: -1px;
+  text-align: center;
+  line-height: 1.5;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+header .top-menu {
+  background-color: #fff;
+  height: 90px;
+}
+
+header .top-menu a.brand {
+  height: 100%;
+}
+
+header .top-menu a.brand img {
+  margin-top: 17px;
+  height: 55px;
+}
