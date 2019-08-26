@@ -1,49 +1,182 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+body {
+  font-family: 'Maven Pro', sans-serif; }
 
-a:hover {
-  text-decoration: none;
-  color: inherit;
-}
-
-.aqua-button {
-  background-color: #30beb4;
+a, p {
   color: #fff;
-  /* cursor: pointer; */
-}
+  display: block;
+  font-family: NoirPro;
+  font-size: 12px; }
 
-.aqua-button:hover {
-  color: #fff;
-}
+.top-menu {
+  padding-bottom: 15px; }
+  .top-menu .row .brand {
+    height: 100%;
+    vertical-align: middle; }
+    .top-menu .row .brand img {
+      margin-top: 17px;
+      height: 55px;
+      width: auto; }
+  .top-menu .row .connect {
+    margin-left: auto;
+    margin-top: 33px; }
+    .top-menu .row .connect a {
+      background-color: #30beb4;
+      border-radius: 30px;
+      color: #fff;
+      display: inline-block;
+      font-family: NoirPro;
+      font-size: 12px;
+      font-weight: 400;
+      margin: 0 5px;
+      padding: 10px 20px;
+      text-align: center; }
+    .top-menu .row .connect .phone {
+      background-color: #0d3e98;
+      color: #fff;
+      padding: 10px 20px 10px 40px;
+      position: relative; }
 
-.square-button {
-  border-radius: 5px;
-  font-family: 'NoirPro';
-  font-size: 12Px;
-  text-transform: uppercase;
-  padding: 10px 30px;
-  font-weight: 200;
-  letter-spacing: 1px;
-  text-indent: -1px;
-  text-align: center;
-  line-height: 1.5;
-  white-space: nowrap;
-  vertical-align: middle;
-}
+.stats {
+  margin: 40px 0 0 0;
+  padding: 10px 0;
+  background-image: url(./images/stats.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .stats .container .row {
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px; }
+    .stats .container .row h3 {
+      display: inline-block;
+      color: #fff;
+      vertical-align: middle;
+      margin: auto 0;
+      text-align: 39px;
+      font-size: 39px; }
+    .stats .container .row .nbr {
+      margin-left: 60px;
+      display: inline-block;
+      width: 130px;
+      color: #fff;
+      font-family: NoirPro;
+      font-weight: 200;
+      text-align: left; }
+      .stats .container .row .nbr .number {
+        font-size: 44px;
+        display: block; }
+      .stats .container .row .nbr .text {
+        font-size: 16px;
+        display: block;
+        text-transform: uppercase; }
 
-header .top-menu {
-  background-color: #fff;
-  height: 90px;
-}
+.accreditations {
+  background-image: url(./images/accreditations.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px 0; }
+  .accreditations .container .row {
+    flex: wrap;
+    margin-right: -15px;
+    margin-left: -15px; }
+    .accreditations .container .row h5 {
+      font-family: NoirPro;
+      font-weight: 200;
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+      margin: 10px auto 20px auto; }
+    .accreditations .container .row .accreditation {
+      width: 20%;
+      padding: 0 20px;
+      vertical-align: bottom; }
+      .accreditations .container .row .accreditation img {
+        display: block;
+        margin: 0 auto 10px auto;
+        max-height: 51px;
+        vertical-align: middle;
+        border-style: none; }
+      .accreditations .container .row .accreditation span {
+        display: block;
+        font-family: NoirPro;
+        font-weight: 200;
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        text-transform: uppercase; }
 
-header .top-menu a.brand {
-  height: 100%;
-}
+footer {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background-size: cover;
+  background-position: top left;
+  background-image: url("https://www.mastermeltgroup.com/wp-content/uploads/2018/09/Plane-sky.png"); }
+  footer .container .row .legal-terms {
+    border-top: 1px solid #3170be;
+    margin-top: 20px;
+    padding-top: 20px; }
+    footer .container .row .legal-terms .copyright {
+      color: #fff;
+      font-family: NoirPro;
+      font-size: 12px;
+      display: block; }
+    footer .container .row .legal-terms p {
+      font-size: 14Px;
+      margin-bottom: 10px; }
+  footer .container .row .linkcol {
+    padding-top: 30px; }
+    footer .container .row .linkcol .link-list .subtitle {
+      color: #fff;
+      text-transform: uppercase;
+      font-family: NoirPro;
+      opacity: .6;
+      font-size: 16px;
+      display: block;
+      margin: 10px auto;
+      font-weight: 200; }
+    footer .container .row .linkcol .link-list a {
+      font-weight: 200;
+      margin-top: 10px; }
+    footer .container .row .linkcol .languages-container {
+      color: #fff;
+      text-transform: uppercase;
+      font-family: NoirPro;
+      opacity: .6;
+      font-size: 16px;
+      display: block;
+      margin: 10px auto;
+      font-weight: 200; }
+      footer .container .row .linkcol .languages-container a {
+        font-weight: 200;
+        margin-top: 10px; }
+    footer .container .row .linkcol .info-container .subtitle {
+      color: #fff;
+      text-transform: uppercase;
+      font-family: NoirPro;
+      opacity: .6;
+      font-size: 16px;
+      display: block;
+      margin: 10px auto;
+      font-weight: 200; }
+    footer .container .row .linkcol .info-container .info {
+      color: #fff;
+      font-family: NoirPro;
+      font-size: 14px;
+      display: block;
+      font-weight: 200;
+      margin-top: 10px; }
+      footer .container .row .linkcol .info-container .info a {
+        font-size: 14px; }
+  footer .container .row .contact .brand {
+    margin: 20px 0;
+    display: block; }
+  footer .container .row .contact h5 {
+    font-family: BergenText;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    text-align: left; }
 
-header .top-menu a.brand img {
-  margin-top: 17px;
-  height: 55px;
-}
+/*# sourceMappingURL=styles.css.map */

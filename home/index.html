@@ -6,18 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <title>Document</title>
 </head>
 <body>
   <header class="menu">
     <div class="container top-menu">
-      <div class="col-12">
+      <div class="row">
         <a href="#" class="brand"><img src="https://medicaim.com/img/logo/logo.svg"/></a>
-        <div class="float-right contact">
+        <div class="float-right connect">
           <a>CUSTOMER AREA</a>
-          <a class="d-none d-md-inline-block"><i class="fa fa-phone"></i>+33 (0) 9 72 39 70 70</a>
+          <a class="d-none d-md-inline-block phone"><i class="fa fa-phone"></i>+33 (0) 9 72 39 70 70</a>
         </div>
       </div>
     </div>
@@ -149,23 +150,23 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid banner data">
+  <div class="container-fluid banner stats">
     <div class="container">
       <div class="row">
         <h3>A few figures</h3>
-        <div class="data-status">
+        <div class="nbr">
           <span class="number">82</span>
           <span class="label">Satisfied patients</span>
         </div>
-        <div class="data-status">
+        <div class="nbr">
           <span class="number">95</span>
           <span class="label">Doctors and surgeons</span>
         </div>
-        <div class="data-status">
+        <div class="nbr">
           <span class="number">101</span>
           <span class="label">Hospitals and clinics</span>
         </div>
-        <div class="data-status">
+        <div class="nbr">
           <span class="number">800</span>
           <span class="label">Healthcare services</span>
         </div>
@@ -209,27 +210,25 @@
     <div class="container">
       <div class="row">
         <h5 class="col-12">Medicaim lists clinics and hospitals which have earned the most respected international accreditations and certifications in medicine</h5>
-        <div class="col-12">
-          <div class="accreditation">
-            <div class="image-container"></div>
-            <span class="name">Joint Commission International (JCI)</span>
-          </div>
-          <div class="accreditation">
-            <div class="image-container"></div>
-            <span class="name">Care Quality Commission (CQC)</span>
-          </div>
-          <div class="accreditation">
-            <div class="image-container"></div>
-            <span class="name">InternationaL Standards Organization (ISO)</span>
-          </div>
-          <div class="accreditation">
-            <div class="image-container"></div>
-            <span class="name">National Committee for Quality Assurance (NCQA)</span>
-          </div>
-          <div class="accreditation">
-            <div class="image-container"></div>
-            <span class="name">Technischer Überwachungsverein (TüV)</span>
-          </div>
+        <div class="accreditation">
+          <div class="image-container"></div>
+          <span class="name">Joint Commission International (JCI)</span>
+        </div>
+        <div class="accreditation">
+          <div class="image-container"></div>
+          <span class="name">Care Quality Commission (CQC)</span>
+        </div>
+        <div class="accreditation">
+          <div class="image-container"></div>
+          <span class="name">InternationaL Standards Organization (ISO)</span>
+        </div>
+        <div class="accreditation">
+          <div class="image-container"></div>
+          <span class="name">National Committee for Quality Assurance (NCQA)</span>
+        </div>
+        <div class="accreditation">
+          <div class="image-container"></div>
+          <span class="name">Technischer Überwachungsverein (TüV)</span>
         </div>
       </div>
     </div>
@@ -274,19 +273,19 @@
   <footer class="container-fluid">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-4 contact">
-          <a href="#">
+        <div class="col-12 col-md-4 contact">
+          <a href="#" class="brand">
             <img src="" alt="">
           </a>
-          <h5>Simplifying medical tourism</h5>
-          <p>For more information, contact us by email, phone or on social networks.</p>
+          <h5>Simplifying &nbsp medical tourism</h5>
+          <p>For more information, &nbsp contact us by email, phone or on social networks.</p>
           <div class="social-media">
             <a href="#"></a>
             <a href="#"></a>
             <a href="#"></a>
           </div>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 linkcol">
           <div class="info-container">
             <p class="subtitle">Informations</p>
             <p class="info">Open 24/24 from Monday to Sunday</p>
@@ -299,26 +298,28 @@
             <a href="/fr/">French</a>
           </div>
         </div>
-        <div class="col-12 col-md-4">
-          <p class="subtitle">MEDICAIM</p>
-          <a href="/en/pricing">Pricing</a>
-          <a href="/en/packages">Our Programs</a>
-          <a href="/en/second-opinion">Second opinion</a>
-          <a href="/en/telemedecine">Telemedecine</a>
-          <a href="/en/about">About us</a>
-          <a href="/en/hospitals-clinics">Hospitals and Clinics</a>
-          <a href="/en/our-doctors-network">Our doctors network</a>
-          <a href="/en/our-team">Our team</a>
-          <a href="/en/financing-options">Financing options</a>
-          <a href="/en/business-solutions">Business solutions</a>
-          <a href="/en/contact">Contact us</a>
-          <a href="/en/terms-and-conditions">Terms and conditions</a>
+        <div class="col-12 col-md-4 linkcol">
+          <div class="link-list">
+            <p class="subtitle">MEDICAIM</p>
+            <a href="/en/pricing">Pricing</a>
+            <a href="/en/packages">Our Programs</a>
+            <a href="/en/second-opinion">Second opinion</a>
+            <a href="/en/telemedecine">Telemedecine</a>
+            <a href="/en/about">About us</a>
+            <a href="/en/hospitals-clinics">Hospitals and Clinics</a>
+            <a href="/en/our-doctors-network">Our doctors network</a>
+            <a href="/en/our-team">Our team</a>
+            <a href="/en/financing-options">Financing options</a>
+            <a href="/en/business-solutions">Business solutions</a>
+            <a href="/en/contact">Contact us</a>
+            <a href="/en/terms-and-conditions">Terms and conditions</a>
+          </div>
         </div>
         <div class="col-12 legal-terms">
           <span class="copyright">© Medicaim 2019 - all rights reserved</span>
           <p>
-            By using our website, you agree to our terms of use and privacy policy. Medicaim does not provide medical advice, diagnosis or 
-            treatment. The information on the website has been posted to support, not replace, the relationship between a patient and their 
+            By using our website, you agree to our terms of use and privacy policy. Medicaim does not provide medical advice, diagnosis or
+            treatment. The information on the website has been posted to support, not replace, the relationship between a patient and their
             physician.
           </p>
         </div>
