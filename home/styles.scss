@@ -1,0 +1,264 @@
+body {
+  font-family: 'Maven Pro', sans-serif;
+}
+
+a, p {
+  color: #fff;
+  display: block;
+  font-family: NoirPro;
+  font-size: 12px;
+}
+
+.top-menu {
+  padding-bottom: 15px;
+
+  .row {
+
+    .brand {
+      height: 100%;
+      vertical-align: middle;
+
+      img {
+        margin-top: 17px;
+        height: 55px;
+        width: auto;
+      }
+    }
+
+    .connect {
+      margin-left: auto;
+      margin-top: 33px;
+
+      a {
+        background-color: #30beb4;
+        border-radius: 30px;
+        color: #fff;
+        display: inline-block;
+        font-family: NoirPro;
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0 5px;
+        padding: 10px 20px;
+        text-align: center;
+      }
+
+      .phone {
+        background-color: #0d3e98;
+        color: #fff;
+        padding: 10px 20px 10px 40px;
+        position: relative;
+      }
+    }
+  }
+}
+
+.stats {
+  margin: 40px 0 0 0;
+  padding: 10px 0;
+  background-image: url(./images/stats.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .container {
+
+    .row {
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+
+      h3 {
+        display: inline-block;
+        color: #fff;
+        vertical-align: middle;
+        margin: auto 0;
+        text-align: 39px;
+        font-size: 39px;
+      }
+
+      .nbr {
+        margin-left: 60px;
+        display: inline-block;
+        width: 130px;
+        color: #fff;
+        font-family: NoirPro;
+        font-weight: 200;
+        text-align: left;
+
+        .number{
+          font-size: 44px;
+          display: block;
+        }
+
+        .text{
+          font-size: 16px;
+          display: block;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+.accreditations {
+  background-image: url(./images/accreditations.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px 0;
+
+  .container {
+
+    .row {
+      flex: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+
+      h5 {
+        font-family: NoirPro;
+        font-weight: 200;
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        margin: 10px auto 20px auto;
+      }
+
+      .accreditation {
+        width: 20%;
+        padding: 0 20px;
+        vertical-align: bottom;
+
+        img {
+          display: block;
+          margin: 0 auto 10px auto;
+          max-height: 51px;
+          vertical-align: middle;
+          border-style: none;
+        }
+
+        span {
+          display: block;
+          font-family: NoirPro;
+          font-weight: 200;
+          color: #fff;
+          text-align: center;
+          font-size: 14px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background-size: cover;
+  background-position: top left;
+  background-image: url('https://www.mastermeltgroup.com/wp-content/uploads/2018/09/Plane-sky.png');
+
+  .container {
+
+    .row {
+
+      .legal-terms {
+        border-top: 1px solid #3170be;
+        margin-top: 20px;
+        padding-top: 20px;
+
+        .copyright {
+          color: #fff;
+          font-family: NoirPro;
+          font-size: 12px;
+          display: block;
+        }
+
+        p {
+          font-size: 14Px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .linkcol {
+        padding-top: 30px;
+
+        .link-list {
+
+          .subtitle {
+            color: #fff;
+            text-transform: uppercase;
+            font-family: NoirPro;
+            opacity: .6;
+            font-size: 16px;
+            display: block;
+            margin: 10px auto;
+            font-weight: 200;
+          }
+
+          a {
+            font-weight: 200;
+            margin-top: 10px;
+          }
+        }
+
+        .languages-container {
+          color: #fff;
+          text-transform: uppercase;
+          font-family: NoirPro;
+          opacity: .6;
+          font-size: 16px;
+          display: block;
+          margin: 10px auto;
+          font-weight: 200;
+
+          a {
+            font-weight: 200;
+            margin-top: 10px;
+          }
+        }
+
+        .info-container {
+
+          .subtitle {
+            color: #fff;
+            text-transform: uppercase;
+            font-family: NoirPro;
+            opacity: .6;
+            font-size: 16px;
+            display: block;
+            margin: 10px auto;
+            font-weight: 200;
+          }
+
+          .info {
+            color: #fff;
+            font-family: NoirPro;
+            font-size: 14px;
+            display: block;
+            font-weight: 200;
+            margin-top: 10px;
+
+            a {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .contact {
+        .brand {
+          margin: 20px 0;
+          display: block;
+        }
+
+        h5 {
+          font-family: BergenText;
+          font-size: 28px;
+          font-weight: 700;
+          color: #fff;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
