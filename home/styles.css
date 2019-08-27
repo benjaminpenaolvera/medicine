@@ -79,17 +79,19 @@ h3 {
   padding-top: 40px;
   padding-bottom: 60px;
   color: #FFFFFF;
-  background-image: url(../images/headline.jpg);
+  background-image: url(./images/headline.jpg);
   background-repeat: no-repeat;
-  background-size: cover; }
-  .headline .headline-container::after {
+  background-size: cover;
+  position: relative; }
+  .headline .headline-container::before {
     width: 100%;
     height: 100%;
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #0d3e98;
-    z-index: 10; }
+    background-color: rgba(13, 62, 152, 0.5);
+    z-index: 0; }
   .headline .headline-container h1 {
     font-weight: 700;
     font-size: 42px; }
@@ -134,6 +136,37 @@ h3 {
       .headline .headline-container a.info-card .card-footer button {
         width: 100%;
         cursor: pointer; }
+
+.articles {
+  margin-top: 40px; }
+  .articles .article-card {
+    margin: 20px auto 0 auto;
+    padding: 0 50px; }
+    .articles .article-card a {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      transition: all 250ms; }
+      .articles .article-card a:hover, .articles .article-card a:focus {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        transform: translateY(-5px); }
+      .articles .article-card a .image-container {
+        height: 230px;
+        overflow: hidden; }
+        .articles .article-card a .image-container img {
+          height: 100%;
+          width: auto; }
+      .articles .article-card a .article-footer {
+        width: 100%;
+        height: 110px;
+        padding: 20px;
+        background-color: #0d3e98; }
+        .articles .article-card a .article-footer p {
+          text-decoration: none;
+          font-weight: 200;
+          font-size: 18px; }
 
 .stats {
   margin: 40px 0 0 0;
