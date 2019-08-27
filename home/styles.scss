@@ -193,6 +193,49 @@ h3 {
   }
 }
 
+.search-bar {
+  background-color: #0d3e98;
+  min-height: 80px;
+  box-shadow: 0 10px 25px 0 rgba(58,64,91,.7);
+  padding: 20px 0;
+  z-index: 2;
+
+  .form-group {
+    margin: 0;
+
+    a {
+      padding: 10px 30px;
+      text-transform: uppercase;
+
+      &:hover {
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+    }
+  }
+
+  p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  select {
+    height: 40px;
+    // padding: 0.65rem 1.125rem 0.75rem 0.375rem;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    color: #495057;
+    font-size: 1rem;
+    outline: 0;
+    // option[selected=true] {
+    //   color: #495057;
+    //   padding: 0;
+    //   line-height: 19px;
+    // }
+  }
+}
+
 .articles {
   margin-top: 40px;
 

@@ -137,6 +137,32 @@ h3 {
         width: 100%;
         cursor: pointer; }
 
+.search-bar {
+  background-color: #0d3e98;
+  min-height: 80px;
+  box-shadow: 0 10px 25px 0 rgba(58, 64, 91, 0.7);
+  padding: 20px 0;
+  z-index: 2; }
+  .search-bar .form-group {
+    margin: 0; }
+    .search-bar .form-group a {
+      padding: 10px 30px;
+      text-transform: uppercase; }
+      .search-bar .form-group a:hover {
+        color: #FFFFFF;
+        text-decoration: none; }
+  .search-bar p {
+    font-size: 16px;
+    margin-bottom: 0; }
+  .search-bar select {
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    color: #495057;
+    font-size: 1rem;
+    outline: 0; }
+
 .articles {
   margin-top: 40px; }
   .articles .article-card {
