@@ -30,6 +30,8 @@ a, p {
       margin: 0 5px;
       padding: 10px 20px;
       text-align: center; }
+      .top-menu .row .connect a:hover {
+        text-decoration: none; }
     .top-menu .row .connect .phone {
       background-color: #0d3e98;
       color: #fff;
@@ -178,5 +180,52 @@ footer {
     font-weight: 700;
     color: #fff;
     text-align: left; }
+
+.popularcat {
+  margin: 20px auto; }
+  .popularcat .row {
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px; }
+    .popularcat .row h3 {
+      margin-bottom: 20px;
+      font-family: BergenText;
+      color: #0d3e98;
+      text-align: center;
+      font-size: 39px; }
+    .popularcat .row a {
+      text-align: center;
+      padding: 0 20px;
+      margin-bottom: 20px; }
+      .popularcat .row a .image-container {
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 10px;
+        user-select: none; }
+        .popularcat .row a .image-container img {
+          width: 100%; }
+      .popularcat .row a span {
+        font-family: NoirPro;
+        font-weight: 200;
+        color: #4f5362;
+        text-align: center;
+        font-size: 14px;
+        text-transform: uppercase; }
+    .popularcat .row .category {
+      text-align: center;
+      padding: 0 20px;
+      margin-bottom: 20px; }
+      .popularcat .row .category .image-container {
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 10px;
+        user-select: none; }
+      .popularcat .row .category .name {
+        font-family: NoirPro;
+        font-weight: 200;
+        color: #4f5362;
+        text-align: center;
+        font-size: 14px;
+        text-transform: uppercase; }
 
 /*# sourceMappingURL=styles.css.map */
