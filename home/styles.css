@@ -60,6 +60,9 @@ h3 {
       padding: 10px 20px 10px 40px;
       position: relative; }
 
+nav li a {
+  text-transform: uppercase; }
+
 .headline .banner {
   padding: 5px 15px;
   font-size: 16px;
@@ -75,6 +78,8 @@ h3 {
     color: #FFFFFF;
     text-decoration: underline;
     cursor: pointer; }
+  .headline .banner p {
+    font-size: 18px !important; }
 .headline .headline-container {
   padding-top: 40px;
   padding-bottom: 60px;
@@ -199,7 +204,17 @@ h3 {
   padding: 10px 0;
   background-image: url(./images/stats.jpg);
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  position: relative; }
+  .stats::before {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(13, 62, 152, 0.5);
+    z-index: -1; }
   .stats .container .row {
     flex-wrap: wrap;
     margin-right: -15px;
@@ -214,7 +229,7 @@ h3 {
     .stats .container .row .nbr {
       margin-left: 60px;
       display: inline-block;
-      width: 130px;
+      width: 260px;
       color: #fff;
       font-family: NoirPro;
       font-weight: 200;
@@ -267,14 +282,12 @@ h3 {
       font-size: 14px;
       margin: 10px auto 20px auto; }
     .accreditations .container .row .accreditation {
-      width: 20%;
       padding: 0 20px;
       vertical-align: bottom; }
       .accreditations .container .row .accreditation img {
         display: block;
-        margin: 0 auto 10px auto;
+        margin: 0 auto 10px;
         max-height: 51px;
-        vertical-align: middle;
         border-style: none; }
       .accreditations .container .row .accreditation span {
         display: block;
@@ -326,7 +339,17 @@ footer {
   margin-left: auto;
   background-size: cover;
   background-position: top left;
-  background-image: url("https://www.mastermeltgroup.com/wp-content/uploads/2018/09/Plane-sky.png"); }
+  background-image: url(./images/footer-plane.jpg);
+  position: relative; }
+  footer::before {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(13, 62, 152, 0.5);
+    z-index: 0; }
   footer .container .row .legal-terms {
     border-top: 1px solid #3170be;
     margin-top: 20px;
@@ -357,14 +380,14 @@ footer {
       color: #fff;
       text-transform: uppercase;
       font-family: NoirPro;
-      opacity: .6;
       font-size: 16px;
       display: block;
       margin: 10px auto;
       font-weight: 200; }
+      footer .container .row .linkcol .languages-container .subtitle {
+        opacity: .6; }
       footer .container .row .linkcol .languages-container a {
-        font-weight: 200;
-        margin-top: 10px; }
+        font-weight: 200; }
     footer .container .row .linkcol .info-container .subtitle {
       color: #fff;
       text-transform: uppercase;
@@ -383,6 +406,20 @@ footer {
       margin-top: 10px; }
       footer .container .row .linkcol .info-container .info a {
         font-size: 14px; }
+    footer .container .row .linkcol .info {
+      color: #FFFFFF;
+      opacity: 1;
+      text-transform: none;
+      font-family: NoirPro;
+      font-size: 14px;
+      display: block;
+      font-weight: 200;
+      margin-top: 10px; }
+      footer .container .row .linkcol .info a {
+        font-size: 14px;
+        display: inline-block; }
+        footer .container .row .linkcol .info a:hover {
+          color: #FFFFFF; }
   footer .container .row .contact .brand {
     margin: 20px 0;
     display: block; }
