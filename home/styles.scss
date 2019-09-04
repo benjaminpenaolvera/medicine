@@ -78,6 +78,20 @@ h3 {
         color: #fff;
         padding: 10px 20px 10px 40px;
         position: relative;
+        i {
+          position: absolute;
+          left: 15px;
+          top: 8px;
+          &::before {
+            animation-delay: 2s;
+            animation-duration: 1s;
+            animation-name: tada;
+            animation-iteration-count: infinite;
+            font-family: 'FontAwesome';
+            font-size: 24px;
+            content: "\f095";
+          }
+        }
       }
     }
   }
@@ -688,6 +702,7 @@ footer {
 
         img {
           width: 100%;
+          height: 100%;
         }
       }
 
@@ -705,8 +720,13 @@ footer {
       text-align: center;
       padding: 0 20px;
       margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
       .image-container {
+        width: 100%;
+        flex-grow: 1;
         border-radius: 5px;
         overflow: hidden;
         margin-bottom: 10px;
@@ -721,6 +741,12 @@ footer {
         font-size: 14px;
         text-transform: uppercase;
       }
+    }
+  }
+
+  .modal-body {
+    p.text-dark {
+      font-size: 14px;
     }
   }
 }
