@@ -72,6 +72,32 @@ h3 {
           font-size: 24px;
           content: "\f095"; }
 
+nav .phone {
+  background-color: #0d3e98;
+  color: #fff !important;
+  padding: 10px 20px 10px 40px;
+  position: relative;
+  border-radius: 30px;
+  display: inline-block;
+  font-family: NoirPro;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0 5px;
+  text-align: center; }
+  nav .phone:hover {
+    text-decoration: none; }
+  nav .phone i {
+    position: absolute;
+    left: 15px;
+    top: 8px; }
+    nav .phone i::before {
+      animation-delay: 2s;
+      animation-duration: 1s;
+      animation-name: tada;
+      animation-iteration-count: infinite;
+      font-family: 'FontAwesome';
+      font-size: 24px;
+      content: "\f095"; }
 nav li a {
   text-transform: uppercase; }
 
@@ -117,7 +143,7 @@ nav li a {
     font-weight: 400;
     font-size: 36px; }
   .headline .headline-container a.info-card {
-    width: 30%;
+    width: 100%;
     background-color: #fff;
     border-radius: 5px;
     margin-top: 40px;
@@ -241,7 +267,7 @@ nav li a {
     .stats .container .row .nbr {
       margin-left: 60px;
       display: inline-block;
-      width: 260px;
+      width: 250px;
       color: #fff;
       font-family: NoirPro;
       font-weight: 200;
@@ -275,7 +301,8 @@ nav li a {
     .benefits .benefit h4 {
       color: #000;
       font-family: NoirPro;
-      font-weight: 200; }
+      font-weight: 200;
+      text-align: center; }
 
 .accreditations {
   background-image: url(./images/accreditations.jpg);
@@ -496,5 +523,41 @@ footer {
         text-transform: uppercase; }
   .popularcat .modal-body p.text-dark {
     font-size: 14px; }
+
+@media (max-width: 767px) {
+  .article-card {
+    max-width: 445px; }
+    .article-card .article-footer {
+      max-height: 70px; }
+
+  .stats .container .nbr {
+    width: 150px !important;
+    margin-left: 30px !important; }
+
+  .benefits .benefit .image-container img {
+    width: 50%; }
+  .benefits .benefit h4 {
+    width: 80%;
+    margin: 0 auto .5rem; }
+
+  .popularcat .category .image-container {
+    width: 75% !important; }
+
+  .testimonials #testimonialsCarousel {
+    margin-top: 15px; }
+    .testimonials #testimonialsCarousel .carousel-inner {
+      height: 380px; }
+      .testimonials #testimonialsCarousel .carousel-inner .carousel-item p.testimonial {
+        font-size: 24px; } }
+@media (min-width: 768px) {
+  a.info-card {
+    max-width: 30%; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .article-card {
+    padding: 0 20px !important; }
+
+  .stats .container .nbr {
+    width: 150px !important;
+    margin-left: 30px !important; } }
 
 /*# sourceMappingURL=styles.css.map */
