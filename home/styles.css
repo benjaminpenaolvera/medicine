@@ -21,7 +21,6 @@ body {
 a, p {
   color: #fff;
   display: block;
-  font-family: NoirPro;
   font-size: 12px; }
 
 h3 {
@@ -330,7 +329,6 @@ nav li a {
         border-style: none; }
       .accreditations .container .row .accreditation span {
         display: block;
-        font-family: NoirPro;
         font-weight: 200;
         color: #fff;
         text-align: center;

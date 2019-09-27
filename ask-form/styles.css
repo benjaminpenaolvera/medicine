@@ -67,7 +67,6 @@
         font-size: 18px;
         margin-bottom: 20px; }
       .form-container .form-box .box-container .submit-next {
-        float: right;
         margin-right: 20px;
         margin-bottom: 20px;
         padding: 5px 50px;
@@ -75,8 +74,9 @@
         text-decoration: none;
         border-radius: 5px;
         border: 1px solid #1257d5;
+        background-color: #1257d5;
         font-weight: 200;
-        color: #0d3e98;
+        color: #fff;
         transition: all .3s ease-in-out;
         cursor: pointer; }
         .form-container .form-box .box-container .submit-next:hover {
@@ -387,10 +387,6 @@
           height: 58px;
           width: 50%;
           padding: 5px 30px; }
-          .form-container .form-box .box-container form.destanddate .form-check:nth-child(odd) {
-            padding: 5px 5px 5px 80px; }
-          .form-container .form-box .box-container form.destanddate .form-check:nth-child(even) {
-            padding: 5px 80px 5px 5px; }
           .form-container .form-box .box-container form.destanddate .form-check input[type=radio] {
             position: absolute;
             left: 120px;

@@ -99,7 +99,7 @@
       }
 
       .submit-next {
-        float: right;
+        // float: right;
         margin-right: 20px;
         margin-bottom: 20px;
         padding: 5px 50px;
@@ -107,9 +107,9 @@
         text-decoration: none;
         border-radius: 5px;
         border: 1px solid #1257d5;
-        // font-family: NoirPro;
+        background-color: #1257d5;
         font-weight: 200;
-        color: #0d3e98;
+        color: #fff;
         transition: all .3s ease-in-out;
         cursor: pointer;
 
@@ -212,7 +212,7 @@
           }
         }
 
-      }    
+      }
 
       form.info {
         display: flex;
@@ -541,14 +541,6 @@
           height: 58px;
           width: 50%;
           padding: 5px 30px;
-
-          &:nth-child(odd) {
-            padding: 5px 5px 5px 80px;
-          }
-
-          &:nth-child(even) {
-            padding: 5px 80px 5px 5px;
-          }
 
           input[type=radio] {
             position: absolute;

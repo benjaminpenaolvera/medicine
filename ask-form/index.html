@@ -24,7 +24,7 @@
         <p class="h1">Customized treatment</p>
         <p class="h1">Ask for a quote</p>
       </div>
-      <div class="col-12 form-pagination">
+      <!-- <div class="col-12 form-pagination">
         <ul class="form-steps">
           <li class="step active">
             <div class="number"><span>1</span></div>
@@ -43,7 +43,7 @@
             <p class="step-title">Confirmation</p>
           </li>
         </ul>
-      </div>
+      </div> -->
     </div>
   </div>
   <div class="container">
@@ -107,7 +107,7 @@
             <span>Continue</span>
           </div>
           <div class="clearfix"></div>
-          <p class="dontknow">I am not sure</p>
+          <!-- <p class="dontknow">I am not sure</p> -->
         </div>
       </div>
       <div class="tab-pane active form-box col-12 col-sm-12 col-md-12 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2"
@@ -156,7 +156,7 @@
         <div class="box-container" id="form-s2">
           <h2>Personal Information</h2>
           <form class="personnal-info disbaled" id="s0-26-29-stepForm">
-            <span>Civility</span>
+            <!-- <span>Civility</span>
             <div class="form-check ouinon animated fadeInLeft">
               <input class="form-check-input" type="radio" name="gender" id="madame" value="madame" required="">
               <label class="form-check-label" for="madame">Madam</label>
@@ -164,7 +164,7 @@
             <div class="form-check ouinon animated fadeInRight">
               <input class="form-check-input" type="radio" name="gender" id="monsieur" value="monsieur" required="">
               <label class="form-check-label" for="monsieur">Sir</label>
-            </div>
+            </div> -->
             <div class="form-check textfield animated fadeInLeft">
               <input class="form-check-input" type="text" name="last_name" placeholder="Last name" required="" value=""
                 id="s0-26-29-last_name">
@@ -294,7 +294,7 @@
                 <option value="FO">Faroe Islands</option>
                 <option value="FJ">Fiji</option>
                 <option value="FI">Finland</option>
-                <option value="FR" selected="">France</option>
+                <option value="FR">France</option>
                 <option value="GF">French Guiana</option>
                 <option value="PF">French Polynesia</option>
                 <option value="TF">French Southern Territories</option>
@@ -454,7 +454,7 @@
                 <option value="UA">Ukraine</option>
                 <option value="AE">United Arab Emirates</option>
                 <option value="GB">United Kingdom</option>
-                <option value="US">United States</option>
+                <option value="US" selected="">United States</option>
                 <option value="UM">United States Minor Outlying Islands</option>
                 <option value="UY">Uruguay</option>
                 <option value="UZ">Uzbekistan</option>
@@ -470,7 +470,7 @@
                 <option value="ZW">Zimbabwe</option>
               </select>
             </div>
-            <div class="form-check textfield animated fadeInRight pass-strength-visible">
+            <!-- <div class="form-check textfield animated fadeInRight pass-strength-visible">
               <div id="s0-26-29-password-gui"></div>
               <input class="form-check-input" type="password" name="password" placeholder="Password" required=""
                 value="" id="s0-26-29-password" data-tippy="">
@@ -480,13 +480,13 @@
                 </div>
               </div>
               <label for="s0-26-29-password">Password</label>
-            </div>
-            <div class="form-check textfield animated fadeInLeft">
+            </div> -->
+            <!-- <div class="form-check textfield animated fadeInLeft">
               <input class="form-check-input" type="password" name="Password confirmation"
-                placeholder="Confirmation du mot de passe" required="" value="" id="s0-26-29-repassword">
+                placeholder="Password confirmation" required="" value="" id="s0-26-29-repassword">
               <label for="s0-26-29-repassword">Password confirmation</label>
-            </div>
-            <div class="form-check checkbox animated fadeInRight">
+            </div> -->
+            <!-- <div class="form-check checkbox animated fadeInRight">
               <input class="form-check-input" type="checkbox" name="cgu" id="s0-26-29-cgu">
               <label for="s0-26-29-cgu">
                 I have read and accept the<a href="/en/terms-and-conditions">&nbsp;terms and conditions&nbsp;</a>
@@ -500,7 +500,7 @@
                 I am aware that Medicaim may use my information to promote its offers. I can object by checking the
                 box opposite.
               </label>
-            </div>
+            </div> -->
           </form>
           <div class="submit-back d-none">
             <span>Return</span>
@@ -515,28 +515,56 @@
           <h2>Destinations</h2>
           <form class="destanddate" id="s0-26-31-stepForm">
             <div class="form-check animated fadeInLeft">
-              <input class="form-check-input" type="radio" name="destination" id="indifférent-dest" value="indifferent">
-              <label class="form-check-label" for="indifférent-dest">Indifferent</label>
+              <input class="form-check-input" type="radio" name="destination" id="los-cabos" value="los-cabos">
+              <label class="form-check-label" for="los-cabos">Los Cabos, Baja California Sur</label>
             </div>
             <div class="form-check animated fadeInRight">
-              <input class="form-check-input" type="radio" name="destination" id="Europe" value="europe">
-              <label class="form-check-label" for="Europe">Europe</label>
+              <input class="form-check-input" type="radio" name="destination" id="Guanajuato" value="guanajuato">
+              <label class="form-check-label" for="Guanajuato">Guanajuato, Guanajuato</label>
+            </div>
+            <div class="form-check animated san-miguel-de-allende">
+              <input class="form-check-input" type="radio" name="destination" id="SanMiguelDeAllende" value="san-miguel-de-allende">
+              <label class="form-check-label" for="SanMiguelDeAllende">San Miguel de Allende, Guanajuato</label>
+            </div>
+            <div class="form-check animated fadeInRight">
+              <input class="form-check-input" type="radio" name="destination" id="Guadalajara" value="guadalajara">
+              <label class="form-check-label" for="Guadalajara">Guadalajara, Jalisco</label>
             </div>
             <div class="form-check animated fadeInLeft">
               <input class="form-check-input" type="radio" name="destination" id="Asie" value="asia">
-              <label class="form-check-label" for="Asie">Asia</label>
+              <label class="form-check-label" for="Asie">Colima, Colima</label>
             </div>
             <div class="form-check animated fadeInRight">
-              <input class="form-check-input" type="radio" name="destination" id="Moyenorient" value="middleeast">
-              <label class="form-check-label" for="Moyenorient">Middle East</label>
+              <input class="form-check-input" type="radio" name="destination" id="Cdmx" value="cdmx">
+              <label class="form-check-label" for="Cdmx">CDMX, CDMX</label>
+            </div>
+            <div class="form-check animated fadeInLeft">
+              <input class="form-check-input" type="radio" name="destination" id="RiverMaya" value="rivera-maya">
+              <label class="form-check-label" for="RiverMaya">Rivera Maya, Quintana Roo</label>
+            </div>
+            <div class="form-check animated fadeInRight">
+              <input class="form-check-input" type="radio" name="destination" id="Cancun" value="cancun">
+              <label class="form-check-label" for="Cancun">Cancun, Quintana Roo</label>
+            </div>
+            <div class="form-check animated fadeInLeft">
+              <input class="form-check-input" type="radio" name="destination" id="Queretaro" value="queretaro">
+              <label class="form-check-label" for="Queretaro">Queretaro, Queretaro</label>
+            </div>
+            <div class="form-check animated fadeInRight">
+              <input class="form-check-input" type="radio" name="destination" id="Tepic" value="tepic">
+              <label class="form-check-label" for="Tepic">Tepic, Nayarit</label>
+            </div>
+            <div class="form-check animated fadeInLeft">
+              <input class="form-check-input" type="radio" name="destination" id="PuertoVallarta" value="puerto-vallarta">
+              <label class="form-check-label" for="PuertoVallarta">Puerto Vallarta, Jalisco</label>
             </div>
             <div class="w-100 py-2"></div>
             <h2>Preferred departure date</h2>
-            <div class="form-check date animated fadeInLeft">
+            <div class="form-check animated fadeInLeft">
               <input class="form-check-input" type="radio" name="date" id="dateindiff" value="indifferent">
               <label class="form-check-label" for="dateindiff">Indifférent</label>
             </div>
-            <div class="form-check date animated fadeInRight">
+            <div class="form-check animated fadeInRight">
               <input class="form-check-input" type="radio" name="date" id="dateasap" value="asap">
               <label class="form-check-label" for="dateasap">As soon as possible</label>
             </div>
@@ -559,5 +587,4 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 </body>
-
 </html>
