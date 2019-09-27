@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row header">
+      <div class="logo-container col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+        <img alt="Logo Medtrip" src="../home/images/logo-medtrip.png" class="logo-white">
+      </div>
+      <div class="form-title col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center">
+        <p class="h1">Customized treatment</p>
+        <p class="h1">Ask for a quote</p>
+      </div>
+      <div class="col-12 form-pagination">
+        <ul class="form-steps">
+          <li class="step active">
+            <div class="number"><span>1</span></div>
+            <p class="step-title">Treatment or Procedure</p>
+          </li>
+          <li class="step">
+            <div class="number"><span>2</span></div>
+            <p class="step-title">Experience</p>
+          </li>
+          <li class="step">
+            <div class="number"><span>3</span></div>
+            <p class="step-title">Personal information</p>
+          </li>
+          <li class="step">
+            <div class="number"><span>4</span></div>
+            <p class="step-title">Confirmation</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row form-container tab-content" id="s0-26-tabs">
+      <div class="tab-pane active form-box col-12 col-sm-12 col-md-12 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2"
+        id="form-s1">
+        <div class="box-container" id="form-s1-2">
+          <h2>Which medical specialty<br>do you require?</h2>
+          <form class="specialties" id="s0-26-25-stepForm">
+            <div class="form-check animated fadeInLeft">
+              <input class="form-check-input" type="radio" name="procedure" id="cancer" value="cancer">
+              <label class="form-check-label" for="cancer">Cancer treatment</label>
+            </div>
+            <div class="form-check animated fadeInRight">
+              <input class="form-check-input" type="radio" name="procedure" id="cardiologie" value="cardiologie">
+              <label class="form-check-label" for="cardiologie">Cardiology</label>
+            </div>
+            <div class="form-check animated fadeInLeft">
+              <input class="form-check-input" type="radio" name="procedure" id="gynecologie" value="gynecologie">
+              <label class="form-check-label" for="gynecologie">Gynecology</label>
+            </div>
+            <div class="form-check animated fadeInRight">
+              <input class="form-check-input" type="radio" name="procedure" id="orthopedie" value="orthopedie">
+              <label class="form-check-label" for="orthopedie">Orthopaedics</label>
+            </div>
+            <div class="form-check animated fadeInLeft">
+              <input class="form-check-input" type="radio" name="procedure" id="ophtalmologie" value="ophtalmologie">
+              <label class="form-check-label" for="ophtalmologie">Ophtalmology</label>
+            </div>
+            <div class="form-check animated fadeInRight">
+              <input class="form-check-input" type="radio" name="procedure" id="traitement-obesite"
+                value="traitement-obesite">
+              <label class="form-check-label" for="traitement-obesite">Obesity treatment</label>
+            </div>
+            <div class="form-check animated fadeInLeft">
+              <input class="form-check-input" type="radio" name="procedure" id="maladies-infectieuses"
+                value="maladies-infectieuses">
+              <label class="form-check-label" for="maladies-infectieuses">Infectious diseases</label>
+            </div>
+            <div class="form-check animated fadeInRight">
+              <input class="form-check-input" type="radio" name="procedure" id="chirurgie-esthetique"
+                value="chirurgie-esthetique">
+              <label class="form-check-label" for="chirurgie-esthetique">Aesthetic surgery</label>
+            </div>
+            <div class="form-check animated fadeInLeft">
+              <input class="form-check-input" type="radio" name="procedure" id="soins-dentaires"
+                value="soins-dentaires">
+              <label class="form-check-label" for="soins-dentaires">Dental care</label>
+            </div>
+            <div class="form-check animated fadeInRight">
+              <input class="form-check-input" type="radio" name="procedure" id="autres-specialite"
+                value="autres-specialite">
+              <label class="form-check-label" for="autres-specialite">Other specialties</label>
+            </div>
+            <div class="form-check col-12 othercontainer" style="display: none;" id="s0-26-25-other">
+              <input class="form-check-input other" type="text" name="procedureName" placeholder="Votre spécialité"
+                id="s0-26-25-otherInput">
+            </div>
+          </form>
+          <div style="margin-bottom: 0; display: none;" class="d-none submit-next" id="s0-26-25-otherButton">
+            <span>Continue</span>
+          </div>
+          <div class="clearfix"></div>
+          <p class="dontknow">I am not sure</p>
+        </div>
+      </div>
+      <div class="tab-pane active form-box col-12 col-sm-12 col-md-12 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2"
+        id="form-s2">
+        <div class="box-container active" id="form-s1-1">
+          <h2>What treatment or procedure do you need?</h2>
+          <form class="info" id="s0-26-27-stepForm"
+            data-marko="{&quot;onsubmit&quot;:&quot;onSubmit s0-26-27 false&quot;}">
+            <div class="form-check procedure animated fadeInLeft">
+              <input class="form-check-input" type="text" name="procedure"
+                placeholder="Physiotherapy, breast cancer...." value="checkup" id="s0-26-27-procedure">
+            </div>
+            <h2>Have you received a diagnosis or seen a specialist?</h2>
+            <div class="form-check yes-no-input animated fadeInLeft">
+              <input class="form-check-input" type="radio" name="verified" id="ouiconsult" value="true">
+              <label class="form-check-label" for="ouiconsult">Yes</label>
+            </div>
+            <div class="form-check yes-no-input animated fadeInRight">
+              <input class="form-check-input" type="radio" name="verified" id="nonconsult" value="false" checked="">
+              <label class="form-check-label" for="nonconsult">No</label>
+            </div>
+          </form>
+          <h2>Please leave blow any files you have including medical history,<br>diagnosis, any current treatment plans,
+            etc.</h2>
+          <div class="dropzone dz-clickable" id="s0-26-27-dropzone">
+            <div class="dz-default dz-message">
+              <div class="input-group mb-3">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="inputGroupFile01"
+                    aria-describedby="inputGroupFileAddon01">
+                  <label class="custom-file-label" for="inputGroupFile01">Drop files here to upload</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-none submit-back" data-marko="{&quot;onclick&quot;:&quot;onBack s0-26-27 false&quot;}">
+            <span>Return</span>
+          </div>
+          <div class="d-none submit-next" data-marko="{&quot;onclick&quot;:&quot;onSubmit s0-26-27 false&quot;}">
+            <span>Continue</span>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane active form-box col-12 col-sm-12 col-md-12 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2"
+        id="form-s3">
+        <div class="box-container" id="form-s2">
+          <h2>Personal Information</h2>
+          <form class="personnal-info disbaled" id="s0-26-29-stepForm">
+            <span>Civility</span>
+            <div class="form-check ouinon animated fadeInLeft">
+              <input class="form-check-input" type="radio" name="gender" id="madame" value="madame" required="">
+              <label class="form-check-label" for="madame">Madam</label>
+            </div>
+            <div class="form-check ouinon animated fadeInRight">
+              <input class="form-check-input" type="radio" name="gender" id="monsieur" value="monsieur" required="">
+              <label class="form-check-label" for="monsieur">Sir</label>
+            </div>
+            <div class="form-check textfield animated fadeInLeft">
+              <input class="form-check-input" type="text" name="last_name" placeholder="Last name" required="" value=""
+                id="s0-26-29-last_name">
+              <!-- <label for="s0-26-29-last_name">Last name</label> -->
+            </div>
+            <div class="form-check textfield animated fadeInRight">
+              <input class="form-check-input" type="text" name="first_name" placeholder="First name" required=""
+                value="" id="s0-26-29-first_name">
+              <!-- <label for="s0-26-29-first_name">First name</label> -->
+            </div>
+            <div class="form-check textfield animated fadeInLeft">
+              <div class="intl-tel-input allow-dropdown">
+                <div class="flag-container d-none">
+                  <div class="selected-flag" tabindex="0" title="France: +33">
+                    <div class="iti-flag fr"></div>
+                    <div class="iti-arrow"></div>
+                  </div>
+                </div>
+                <input class="form-check-input phonepicker" type="tel" name="phone_number"
+                  placeholder="+33 6 12 34 56 78" required="" value="" id="s0-26-29-phone_number" autocomplete="off">
+              </div>
+            </div>
+            <div class="form-check textfield animated fadeInRight">
+              <input class="form-check-input" type="email" name="email" placeholder="Email" required="" value=""
+                id="s0-26-29-email">
+              <label for="s0-26-29-email">Email</label>
+            </div>
+            <div class="form-check textfield animated fadeInLeft">
+              <input class="form-check-input" type="text" name="nationality" placeholder="Nationality" required=""
+                value="" id="s0-26-29-nationality">
+              <label for="s0-26-29-nationality">Nationality</label>
+            </div>
+            <div class="form-check textfield animated fadeInRight">
+              <input class="form-check-input" type="text" name="birth_date" placeholder="Birth date" required=""
+                value="" id="s0-26-29-birth_date">
+              <label for="s0-26-29-birth_date">Birth date</label>
+            </div>
+            <div class="form-check textfield animated fadeInLeft">
+              <input class="form-check-input" type="text" name="address" placeholder="Address" required="" value=""
+                id="s0-26-29-address">
+              <label for="s0-26-29-address">Address</label>
+            </div>
+            <div class="form-check textfield animated fadeInRight">
+              <input class="form-check-input" type="text" name="postal_code" placeholder="Postal code" required=""
+                value="" id="s0-26-29-postal_code">
+              <label for="s0-26-29-postal_code">Postal code</label>
+            </div>
+            <div class="form-check textfield animated fadeInLeft">
+              <input class="form-check-input" type="text" name="city" placeholder="City" required="" value=""
+                id="s0-26-29-city">
+              <label for="s0-26-29-city">City</label>
+            </div>
+            <div class="form-check textfield animated fadeInRight">
+              <select class="custom-select" name="country" required="" id="s0-26-29-country">
+                <option value="AF">Afghanistan</option>
+                <option value="AX">Åland Islands</option>
+                <option value="AL">Albania</option>
+                <option value="DZ">Algeria</option>
+                <option value="AS">American Samoa</option>
+                <option value="AD">Andorra</option>
+                <option value="AO">Angola</option>
+                <option value="AI">Anguilla</option>
+                <option value="AQ">Antarctica</option>
+                <option value="AG">Antigua and Barbuda</option>
+                <option value="AR">Argentina</option>
+                <option value="AM">Armenia</option>
+                <option value="AW">Aruba</option>
+                <option value="AU">Australia</option>
+                <option value="AT">Austria</option>
+                <option value="AZ">Azerbaijan</option>
+                <option value="BS">Bahamas</option>
+                <option value="BH">Bahrain</option>
+                <option value="BD">Bangladesh</option>
+                <option value="BB">Barbados</option>
+                <option value="BY">Belarus</option>
+                <option value="BE">Belgium</option>
+                <option value="BZ">Belize</option>
+                <option value="BJ">Benin</option>
+                <option value="BM">Bermuda</option>
+                <option value="BT">Bhutan</option>
+                <option value="BO">Bolivia, Plurinational State of</option>
+                <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                <option value="BA">Bosnia and Herzegovina</option>
+                <option value="BW">Botswana</option>
+                <option value="BV">Bouvet Island</option>
+                <option value="BR">Brazil</option>
+                <option value="IO">British Indian Ocean Territory</option>
+                <option value="BN">Brunei Darussalam</option>
+                <option value="BG">Bulgaria</option>
+                <option value="BF">Burkina Faso</option>
+                <option value="BI">Burundi</option>
+                <option value="KH">Cambodia</option>
+                <option value="CM">Cameroon</option>
+                <option value="CA">Canada</option>
+                <option value="CV">Cape Verde</option>
+                <option value="KY">Cayman Islands</option>
+                <option value="CF">Central African Republic</option>
+                <option value="TD">Chad</option>
+                <option value="CL">Chile</option>
+                <option value="CN">China</option>
+                <option value="CX">Christmas Island</option>
+                <option value="CC">Cocos (Keeling) Islands</option>
+                <option value="CO">Colombia</option>
+                <option value="KM">Comoros</option>
+                <option value="CG">Congo</option>
+                <option value="CD">Congo, the Democratic Republic of the</option>
+                <option value="CK">Cook Islands</option>
+                <option value="CR">Costa Rica</option>
+                <option value="CI">Côte d'Ivoire</option>
+                <option value="HR">Croatia</option>
+                <option value="CU">Cuba</option>
+                <option value="CW">Curaçao</option>
+                <option value="CY">Cyprus</option>
+                <option value="CZ">Czech Republic</option>
+                <option value="DK">Denmark</option>
+                <option value="DJ">Djibouti</option>
+                <option value="DM">Dominica</option>
+                <option value="DO">Dominican Republic</option>
+                <option value="EC">Ecuador</option>
+                <option value="EG">Egypt</option>
+                <option value="SV">El Salvador</option>
+                <option value="GQ">Equatorial Guinea</option>
+                <option value="ER">Eritrea</option>
+                <option value="EE">Estonia</option>
+                <option value="ET">Ethiopia</option>
+                <option value="FK">Falkland Islands (Malvinas)</option>
+                <option value="FO">Faroe Islands</option>
+                <option value="FJ">Fiji</option>
+                <option value="FI">Finland</option>
+                <option value="FR" selected="">France</option>
+                <option value="GF">French Guiana</option>
+                <option value="PF">French Polynesia</option>
+                <option value="TF">French Southern Territories</option>
+                <option value="GA">Gabon</option>
+                <option value="GM">Gambia</option>
+                <option value="GE">Georgia</option>
+                <option value="DE">Germany</option>
+                <option value="GH">Ghana</option>
+                <option value="GI">Gibraltar</option>
+                <option value="GR">Greece</option>
+                <option value="GL">Greenland</option>
+                <option value="GD">Grenada</option>
+                <option value="GP">Guadeloupe</option>
+                <option value="GU">Guam</option>
+                <option value="GT">Guatemala</option>
+                <option value="GG">Guernsey</option>
+                <option value="GN">Guinea</option>
+                <option value="GW">Guinea-Bissau</option>
+                <option value="GY">Guyana</option>
+                <option value="HT">Haiti</option>
+                <option value="HM">Heard Island and McDonald Islands</option>
+                <option value="VA">Holy See (Vatican City State)</option>
+                <option value="HN">Honduras</option>
+                <option value="HK">Hong Kong</option>
+                <option value="HU">Hungary</option>
+                <option value="IS">Iceland</option>
+                <option value="IN">India</option>
+                <option value="ID">Indonesia</option>
+                <option value="IR">Iran, Islamic Republic of</option>
+                <option value="IQ">Iraq</option>
+                <option value="IE">Ireland</option>
+                <option value="IM">Isle of Man</option>
+                <option value="IL">Israel</option>
+                <option value="IT">Italy</option>
+                <option value="JM">Jamaica</option>
+                <option value="JP">Japan</option>
+                <option value="JE">Jersey</option>
+                <option value="JO">Jordan</option>
+                <option value="KZ">Kazakhstan</option>
+                <option value="KE">Kenya</option>
+                <option value="KI">Kiribati</option>
+                <option value="KP">Korea, Democratic People's Republic of</option>
+                <option value="KR">Korea, Republic of</option>
+                <option value="KW">Kuwait</option>
+                <option value="KG">Kyrgyzstan</option>
+                <option value="LA">Lao People's Democratic Republic</option>
+                <option value="LV">Latvia</option>
+                <option value="LB">Lebanon</option>
+                <option value="LS">Lesotho</option>
+                <option value="LR">Liberia</option>
+                <option value="LY">Libya</option>
+                <option value="LI">Liechtenstein</option>
+                <option value="LT">Lithuania</option>
+                <option value="LU">Luxembourg</option>
+                <option value="MO">Macao</option>
+                <option value="MK">Macedonia, the former Yugoslav Republic of</option>
+                <option value="MG">Madagascar</option>
+                <option value="MW">Malawi</option>
+                <option value="MY">Malaysia</option>
+                <option value="MV">Maldives</option>
+                <option value="ML">Mali</option>
+                <option value="MT">Malta</option>
+                <option value="MH">Marshall Islands</option>
+                <option value="MQ">Martinique</option>
+                <option value="MR">Mauritania</option>
+                <option value="MU">Mauritius</option>
+                <option value="YT">Mayotte</option>
+                <option value="MX">Mexico</option>
+                <option value="FM">Micronesia, Federated States of</option>
+                <option value="MD">Moldova, Republic of</option>
+                <option value="MC">Monaco</option>
+                <option value="MN">Mongolia</option>
+                <option value="ME">Montenegro</option>
+                <option value="MS">Montserrat</option>
+                <option value="MA">Morocco</option>
+                <option value="MZ">Mozambique</option>
+                <option value="MM">Myanmar</option>
+                <option value="NA">Namibia</option>
+                <option value="NR">Nauru</option>
+                <option value="NP">Nepal</option>
+                <option value="NL">Netherlands</option>
+                <option value="NC">New Caledonia</option>
+                <option value="NZ">New Zealand</option>
+                <option value="NI">Nicaragua</option>
+                <option value="NE">Niger</option>
+                <option value="NG">Nigeria</option>
+                <option value="NU">Niue</option>
+                <option value="NF">Norfolk Island</option>
+                <option value="MP">Northern Mariana Islands</option>
+                <option value="NO">Norway</option>
+                <option value="OM">Oman</option>
+                <option value="PK">Pakistan</option>
+                <option value="PW">Palau</option>
+                <option value="PS">Palestinian Territory, Occupied</option>
+                <option value="PA">Panama</option>
+                <option value="PG">Papua New Guinea</option>
+                <option value="PY">Paraguay</option>
+                <option value="PE">Peru</option>
+                <option value="PH">Philippines</option>
+                <option value="PN">Pitcairn</option>
+                <option value="PL">Poland</option>
+                <option value="PT">Portugal</option>
+                <option value="PR">Puerto Rico</option>
+                <option value="QA">Qatar</option>
+                <option value="RE">Réunion</option>
+                <option value="RO">Romania</option>
+                <option value="RU">Russian Federation</option>
+                <option value="RW">Rwanda</option>
+                <option value="BL">Saint Barthélemy</option>
+                <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+                <option value="KN">Saint Kitts and Nevis</option>
+                <option value="LC">Saint Lucia</option>
+                <option value="MF">Saint Martin (French part)</option>
+                <option value="PM">Saint Pierre and Miquelon</option>
+                <option value="VC">Saint Vincent and the Grenadines</option>
+                <option value="WS">Samoa</option>
+                <option value="SM">San Marino</option>
+                <option value="ST">Sao Tome and Principe</option>
+                <option value="SA">Saudi Arabia</option>
+                <option value="SN">Senegal</option>
+                <option value="RS">Serbia</option>
+                <option value="SC">Seychelles</option>
+                <option value="SL">Sierra Leone</option>
+                <option value="SG">Singapore</option>
+                <option value="SX">Sint Maarten (Dutch part)</option>
+                <option value="SK">Slovakia</option>
+                <option value="SI">Slovenia</option>
+                <option value="SB">Solomon Islands</option>
+                <option value="SO">Somalia</option>
+                <option value="ZA">South Africa</option>
+                <option value="GS">South Georgia and the South Sandwich Islands</option>
+                <option value="SS">South Sudan</option>
+                <option value="ES">Spain</option>
+                <option value="LK">Sri Lanka</option>
+                <option value="SD">Sudan</option>
+                <option value="SR">Suriname</option>
+                <option value="SJ">Svalbard and Jan Mayen</option>
+                <option value="SZ">Swaziland</option>
+                <option value="SE">Sweden</option>
+                <option value="CH">Switzerland</option>
+                <option value="SY">Syrian Arab Republic</option>
+                <option value="TW">Taiwan, Province of China</option>
+                <option value="TJ">Tajikistan</option>
+                <option value="TZ">Tanzania, United Republic of</option>
+                <option value="TH">Thailand</option>
+                <option value="TL">Timor-Leste</option>
+                <option value="TG">Togo</option>
+                <option value="TK">Tokelau</option>
+                <option value="TO">Tonga</option>
+                <option value="TT">Trinidad and Tobago</option>
+                <option value="TN">Tunisia</option>
+                <option value="TR">Turkey</option>
+                <option value="TM">Turkmenistan</option>
+                <option value="TC">Turks and Caicos Islands</option>
+                <option value="TV">Tuvalu</option>
+                <option value="UG">Uganda</option>
+                <option value="UA">Ukraine</option>
+                <option value="AE">United Arab Emirates</option>
+                <option value="GB">United Kingdom</option>
+                <option value="US">United States</option>
+                <option value="UM">United States Minor Outlying Islands</option>
+                <option value="UY">Uruguay</option>
+                <option value="UZ">Uzbekistan</option>
+                <option value="VU">Vanuatu</option>
+                <option value="VE">Venezuela, Bolivarian Republic of</option>
+                <option value="VN">Viet Nam</option>
+                <option value="VG">Virgin Islands, British</option>
+                <option value="VI">Virgin Islands, U.S.</option>
+                <option value="WF">Wallis and Futuna</option>
+                <option value="EH">Western Sahara</option>
+                <option value="YE">Yemen</option>
+                <option value="ZM">Zambia</option>
+                <option value="ZW">Zimbabwe</option>
+              </select>
+            </div>
+            <div class="form-check textfield animated fadeInRight pass-strength-visible">
+              <div id="s0-26-29-password-gui"></div>
+              <input class="form-check-input" type="password" name="password" placeholder="Password" required=""
+                value="" id="s0-26-29-password" data-tippy="">
+              <div class="pass-wrapper">
+                <div class="pass-graybar">
+                  <div class="pass-colorbar"></div>
+                </div>
+              </div>
+              <label for="s0-26-29-password">Password</label>
+            </div>
+            <div class="form-check textfield animated fadeInLeft">
+              <input class="form-check-input" type="password" name="Password confirmation"
+                placeholder="Confirmation du mot de passe" required="" value="" id="s0-26-29-repassword">
+              <label for="s0-26-29-repassword">Password confirmation</label>
+            </div>
+            <div class="form-check checkbox animated fadeInRight">
+              <input class="form-check-input" type="checkbox" name="cgu" id="s0-26-29-cgu">
+              <label for="s0-26-29-cgu">
+                I have read and accept the<a href="/en/terms-and-conditions">&nbsp;terms and conditions&nbsp;</a>
+                and I consent to the collection and processing of my personal health data in the context of the Medicaim
+                services.
+              </label>
+            </div>
+            <div class="form-check checkbox animated fadeInLeft">
+              <input class="form-check-input" type="checkbox" name="gdpr" id="s0-26-29-gdpr">
+              <label for="s0-26-29-gdpr">
+                I am aware that Medicaim may use my information to promote its offers. I can object by checking the
+                box opposite.
+              </label>
+            </div>
+          </form>
+          <div class="submit-back d-none">
+            <span>Return</span>
+          </div>
+          <div class="submit-next animated fadeInRight d-none">
+            <span>Continue</span>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane active form-box col-12 col-sm-12 col-md-12 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2" id="s0-26-step-4">
+        <div class="box-container" id="s0-26-31-boxForm">
+          <h2>Destinations</h2>
+          <form class="destanddate" id="s0-26-31-stepForm">
+            <div class="form-check animated fadeInLeft">
+              <input class="form-check-input" type="radio" name="destination" id="indifférent-dest" value="indifferent">
+              <label class="form-check-label" for="indifférent-dest">Indifferent</label>
+            </div>
+            <div class="form-check animated fadeInRight">
+              <input class="form-check-input" type="radio" name="destination" id="Europe" value="europe">
+              <label class="form-check-label" for="Europe">Europe</label>
+            </div>
+            <div class="form-check animated fadeInLeft">
+              <input class="form-check-input" type="radio" name="destination" id="Asie" value="asia">
+              <label class="form-check-label" for="Asie">Asia</label>
+            </div>
+            <div class="form-check animated fadeInRight">
+              <input class="form-check-input" type="radio" name="destination" id="Moyenorient" value="middleeast">
+              <label class="form-check-label" for="Moyenorient">Middle East</label>
+            </div>
+            <div class="w-100 py-2"></div>
+            <h2>Preferred departure date</h2>
+            <div class="form-check date animated fadeInLeft">
+              <input class="form-check-input" type="radio" name="date" id="dateindiff" value="indifferent">
+              <label class="form-check-label" for="dateindiff">Indifférent</label>
+            </div>
+            <div class="form-check date animated fadeInRight">
+              <input class="form-check-input" type="radio" name="date" id="dateasap" value="asap">
+              <label class="form-check-label" for="dateasap">As soon as possible</label>
+            </div>
+          </form>
+          <div class="submit-back d-none"><span>Return</span></div>
+          <div class="submit-next animated fadeInLeft mt-3"><span>Finalize my request</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
