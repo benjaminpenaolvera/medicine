@@ -18,7 +18,7 @@
   background-color: #30beb4;
 }
 
-body {
+body h3 h4 h5 a p {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -29,7 +29,6 @@ a, p {
 }
 
 h3 {
-  // font-family: BergenText;
   color: #0d3e98;
   text-align: center;
   font-size: 39px;
@@ -60,6 +59,7 @@ h3 {
         border-radius: 30px;
         color: #fff;
         display: inline-block;
+        font-family: 'Roboto', sans-serif;
         font-size: 12px;
         font-weight: 400;
         margin: 0 5px;
@@ -74,6 +74,7 @@ h3 {
       .phone {
         background-color: #0d3e98;
         color: #fff;
+        font-family: 'Roboto', sans-serif;
         padding: 10px 20px 10px 40px;
         position: relative;
         i {
@@ -177,14 +178,14 @@ nav {
     }
 
     h1 {
-      // font-family: BergenText;
+      font-family: 'Roboto', sans-serif;
       font-weight: 700;
       font-size: 42px;
     }
 
     h2 {
       margin-top: 60px;
-      // font-family: BergenText;
+      font-family: 'Roboto', sans-serif;
       font-weight: 400;
       font-size: 36px;
     }
@@ -507,7 +508,7 @@ nav {
         // }
 
         p.testimonial {
-          font-family: BergenText;
+          font-family: 'Roboto';
           color: #222328;
           font-size: 36px;
           text-align: center;
@@ -677,7 +678,7 @@ footer {
         }
 
         h5 {
-          font-family: BergenText;
+          font-family: 'Roboto';
           font-size: 28px;
           font-weight: 700;
           color: #fff;
@@ -698,7 +699,7 @@ footer {
 
     h3 {
       margin-bottom: 20px;
-      font-family: BergenText;
+      font-family: 'Roboto';
       color: #0d3e98;
       text-align: center;
       font-size: 39px;
@@ -782,8 +783,8 @@ footer {
       width: 50%;
     }
     h4 {
-      width: 80%;
       margin: 0 auto .5rem;
+      width: 80%;
     }
   }
   .popularcat .category {
