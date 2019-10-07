@@ -45,7 +45,6 @@ h3 {
       border-radius: 30px;
       color: #fff;
       display: inline-block;
-      font-family: NoirPro;
       font-size: 12px;
       font-weight: 400;
       margin: 0 5px;
@@ -78,7 +77,6 @@ nav .phone {
   position: relative;
   border-radius: 30px;
   display: inline-block;
-  font-family: NoirPro;
   font-size: 12px;
   font-weight: 400;
   margin: 0 5px;
@@ -268,7 +266,6 @@ nav li a {
       display: inline-block;
       width: 250px;
       color: #fff;
-      font-family: NoirPro;
       font-weight: 200;
       text-align: left; }
       .stats .container .row .nbr .number {
@@ -299,7 +296,6 @@ nav li a {
       margin: 0 auto; }
     .benefits .benefit h4 {
       color: #000;
-      font-family: NoirPro;
       font-weight: 200;
       text-align: center; }
 
@@ -313,7 +309,6 @@ nav li a {
     margin-right: -15px;
     margin-left: -15px; }
     .accreditations .container .row h5 {
-      font-family: NoirPro;
       font-weight: 200;
       color: #fff;
       text-align: center;
@@ -393,7 +388,6 @@ footer {
     padding-top: 20px; }
     footer .container .row .legal-terms .copyright {
       color: #fff;
-      font-family: NoirPro;
       font-size: 12px;
       display: block; }
     footer .container .row .legal-terms p {
@@ -404,7 +398,6 @@ footer {
     footer .container .row .linkcol .link-list .subtitle {
       color: #fff;
       text-transform: uppercase;
-      font-family: NoirPro;
       opacity: .6;
       font-size: 16px;
       display: block;
@@ -416,7 +409,6 @@ footer {
     footer .container .row .linkcol .languages-container {
       color: #fff;
       text-transform: uppercase;
-      font-family: NoirPro;
       font-size: 16px;
       display: block;
       margin: 10px auto;
@@ -428,7 +420,6 @@ footer {
     footer .container .row .linkcol .info-container .subtitle {
       color: #fff;
       text-transform: uppercase;
-      font-family: NoirPro;
       opacity: .6;
       font-size: 16px;
       display: block;
@@ -436,7 +427,6 @@ footer {
       font-weight: 200; }
     footer .container .row .linkcol .info-container .info {
       color: #fff;
-      font-family: NoirPro;
       font-size: 14px;
       display: block;
       font-weight: 200;
@@ -447,7 +437,6 @@ footer {
       color: #FFFFFF;
       opacity: 1;
       text-transform: none;
-      font-family: NoirPro;
       font-size: 14px;
       display: block;
       font-weight: 200;
@@ -492,7 +481,6 @@ footer {
           width: 100%;
           height: 100%; }
       .popularcat .row a span {
-        font-family: NoirPro;
         font-weight: 200;
         color: #4f5362;
         text-align: center;
@@ -513,7 +501,6 @@ footer {
         margin-bottom: 10px;
         user-select: none; }
       .popularcat .row .category .name {
-        font-family: NoirPro;
         font-weight: 200;
         color: #4f5362;
         text-align: center;
