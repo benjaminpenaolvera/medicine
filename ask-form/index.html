@@ -26,19 +26,19 @@
       </div>
       <!-- <div class="col-12 form-pagination">
         <ul class="form-steps">
-          <li class="step active">
+          <li class="step" id="step-number-1">
             <div class="number"><span>1</span></div>
             <p class="step-title">Treatment or Procedure</p>
           </li>
-          <li class="step">
+          <li class="step" id="step-number-2">
             <div class="number"><span>2</span></div>
             <p class="step-title">Experience</p>
           </li>
-          <li class="step">
+          <li class="step" id="step-number-3">
             <div class="number"><span>3</span></div>
             <p class="step-title">Personal information</p>
           </li>
-          <li class="step">
+          <li class="step" id="step-number-4">
             <div class="number"><span>4</span></div>
             <p class="step-title">Confirmation</p>
           </li>
@@ -94,31 +94,31 @@
               <label class="form-check-label" for="soins-dentaires">Dental care</label>
             </div>
             <div class="form-check animated fadeInRight">
-              <input class="form-check-input" type="radio" name="procedure" id="autres-specialite"
+              <input class="form-check-input" type="radio" name="procedure" id="s1-otherSpecialties"
                 value="autres-specialite">
-              <label class="form-check-label" for="autres-specialite">Other specialties</label>
+              <label class="form-check-label" for="s1-otherSpecialties" id="s1-otherSpecialties-label">Other specialties</label>
             </div>
-            <div class="form-check col-12 othercontainer" style="display: none;" id="s0-26-25-other">
-              <input class="form-check-input other" type="text" name="procedureName" placeholder="Votre spécialité"
-                id="s0-26-25-otherInput">
+            <div class="form-check col-12 othercontainer d-none" id="s1-otherInputContainer">
+              <input class="form-check-input other" type="text" name="procedureName" placeholder="Other specialty"
+                id="s1-otherInput">
             </div>
           </form>
-          <div style="margin-bottom: 0; display: none;" class="d-none submit-next" id="s0-26-25-otherButton">
+          <p class="dontknow" id="s1-dontknow">I am not sure</p>
+          <div style="margin-bottom: 0;" class="d-none submit-next" id="s1-continue">
             <span>Continue</span>
           </div>
           <div class="clearfix"></div>
-          <!-- <p class="dontknow">I am not sure</p> -->
         </div>
       </div>
-      <div class="tab-pane active form-box col-12 col-sm-12 col-md-12 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2"
+      <div class="d-none tab-pane active form-box col-12 col-sm-12 col-md-12 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2"
         id="form-s2">
         <div class="box-container active" id="form-s1-1">
           <h2>What treatment or procedure do you need?</h2>
-          <form class="info" id="s0-26-27-stepForm"
+          <form class="info" id="s2-stepForm"
             data-marko="{&quot;onsubmit&quot;:&quot;onSubmit s0-26-27 false&quot;}">
             <div class="form-check procedure animated fadeInLeft">
               <input class="form-check-input" type="text" name="procedure"
-                placeholder="Physiotherapy, breast cancer...." value="checkup" id="s0-26-27-procedure">
+                placeholder="Physiotherapy, breast cancer...." value="" id="s2-procedureInput">
             </div>
             <h2>Have you received a diagnosis or seen a specialist?</h2>
             <div class="form-check yes-no-input animated fadeInLeft">
@@ -126,7 +126,7 @@
               <label class="form-check-label" for="ouiconsult">Yes</label>
             </div>
             <div class="form-check yes-no-input animated fadeInRight">
-              <input class="form-check-input" type="radio" name="verified" id="nonconsult" value="false" checked="">
+              <input class="form-check-input" type="radio" name="verified" id="nonconsult" value="false">
               <label class="form-check-label" for="nonconsult">No</label>
             </div>
           </form>
@@ -143,19 +143,19 @@
               </div>
             </div>
           </div>
-          <div class="d-none submit-back" data-marko="{&quot;onclick&quot;:&quot;onBack s0-26-27 false&quot;}">
+          <div class="submit-back" data-marko="{&quot;onclick&quot;:&quot;onBack s0-26-27 false&quot;}" id="s2-return">
             <span>Return</span>
           </div>
-          <div class="d-none submit-next" data-marko="{&quot;onclick&quot;:&quot;onSubmit s0-26-27 false&quot;}">
+          <div class="d-none submit-next" data-marko="{&quot;onclick&quot;:&quot;onSubmit s0-26-27 false&quot;}" id="s2-continue">
             <span>Continue</span>
           </div>
         </div>
       </div>
-      <div class="tab-pane active form-box col-12 col-sm-12 col-md-12 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2"
+      <div class="d-none tab-pane active form-box col-12 col-sm-12 col-md-12 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2"
         id="form-s3">
         <div class="box-container" id="form-s2">
           <h2>Personal Information</h2>
-          <form class="personnal-info disbaled" id="s0-26-29-stepForm">
+          <form class="personnal-info disbaled" id="s3-stepForm">
             <!-- <span>Civility</span>
             <div class="form-check ouinon animated fadeInLeft">
               <input class="form-check-input" type="radio" name="gender" id="madame" value="madame" required="">
@@ -167,13 +167,13 @@
             </div> -->
             <div class="form-check textfield animated fadeInLeft">
               <input class="form-check-input" type="text" name="last_name" placeholder="Last name" required="" value=""
-                id="s0-26-29-last_name">
-              <!-- <label for="s0-26-29-last_name">Last name</label> -->
+                id="s3-last_name">
+              <!-- <label for="s3-last_name">Last name</label> -->
             </div>
             <div class="form-check textfield animated fadeInRight">
               <input class="form-check-input" type="text" name="first_name" placeholder="First name" required=""
-                value="" id="s0-26-29-first_name">
-              <!-- <label for="s0-26-29-first_name">First name</label> -->
+                value="" id="s3-first_name">
+              <!-- <label for="s3-first_name">First name</label> -->
             </div>
             <div class="form-check textfield animated fadeInLeft">
               <div class="intl-tel-input allow-dropdown">
@@ -184,41 +184,41 @@
                   </div>
                 </div>
                 <input class="form-check-input phonepicker" type="tel" name="phone_number"
-                  placeholder="+33 6 12 34 56 78" required="" value="" id="s0-26-29-phone_number" autocomplete="off">
+                  placeholder="+33 6 12 34 56 78" required="" value="" id="s3-phone_number" autocomplete="off">
               </div>
             </div>
             <div class="form-check textfield animated fadeInRight">
               <input class="form-check-input" type="email" name="email" placeholder="Email" required="" value=""
-                id="s0-26-29-email">
-              <label for="s0-26-29-email">Email</label>
+                id="s3-email">
+              <label for="s3-email">Email</label>
             </div>
             <div class="form-check textfield animated fadeInLeft">
               <input class="form-check-input" type="text" name="nationality" placeholder="Nationality" required=""
-                value="" id="s0-26-29-nationality">
-              <label for="s0-26-29-nationality">Nationality</label>
+                value="" id="s3-nationality">
+              <label for="s3-nationality">Nationality</label>
             </div>
             <div class="form-check textfield animated fadeInRight">
               <input class="form-check-input" type="text" name="birth_date" placeholder="Birth date" required=""
-                value="" id="s0-26-29-birth_date">
-              <label for="s0-26-29-birth_date">Birth date</label>
+                value="" id="s3-birth_date">
+              <label for="s3-birth_date">Birth date</label>
             </div>
             <div class="form-check textfield animated fadeInLeft">
               <input class="form-check-input" type="text" name="address" placeholder="Address" required="" value=""
-                id="s0-26-29-address">
-              <label for="s0-26-29-address">Address</label>
+                id="s3-address">
+              <label for="s3-address">Address</label>
             </div>
             <div class="form-check textfield animated fadeInRight">
               <input class="form-check-input" type="text" name="postal_code" placeholder="Postal code" required=""
-                value="" id="s0-26-29-postal_code">
-              <label for="s0-26-29-postal_code">Postal code</label>
+                value="" id="s3-postal_code">
+              <label for="s3-postal_code">Postal code</label>
             </div>
             <div class="form-check textfield animated fadeInLeft">
               <input class="form-check-input" type="text" name="city" placeholder="City" required="" value=""
-                id="s0-26-29-city">
-              <label for="s0-26-29-city">City</label>
+                id="s3-city">
+              <label for="s3-city">City</label>
             </div>
             <div class="form-check textfield animated fadeInRight">
-              <select class="custom-select" name="country" required="" id="s0-26-29-country">
+              <select class="custom-select" name="country" required="" id="s3-country">
                 <option value="AF">Afghanistan</option>
                 <option value="AX">Åland Islands</option>
                 <option value="AL">Albania</option>
@@ -471,49 +471,49 @@
               </select>
             </div>
             <!-- <div class="form-check textfield animated fadeInRight pass-strength-visible">
-              <div id="s0-26-29-password-gui"></div>
+              <div id="s3-password-gui"></div>
               <input class="form-check-input" type="password" name="password" placeholder="Password" required=""
-                value="" id="s0-26-29-password" data-tippy="">
+                value="" id="s3-password" data-tippy="">
               <div class="pass-wrapper">
                 <div class="pass-graybar">
                   <div class="pass-colorbar"></div>
                 </div>
               </div>
-              <label for="s0-26-29-password">Password</label>
+              <label for="s3-password">Password</label>
             </div> -->
             <!-- <div class="form-check textfield animated fadeInLeft">
               <input class="form-check-input" type="password" name="Password confirmation"
-                placeholder="Password confirmation" required="" value="" id="s0-26-29-repassword">
-              <label for="s0-26-29-repassword">Password confirmation</label>
+                placeholder="Password confirmation" required="" value="" id="s3-repassword">
+              <label for="s3-repassword">Password confirmation</label>
             </div> -->
             <!-- <div class="form-check checkbox animated fadeInRight">
-              <input class="form-check-input" type="checkbox" name="cgu" id="s0-26-29-cgu">
-              <label for="s0-26-29-cgu">
+              <input class="form-check-input" type="checkbox" name="cgu" id="s3-cgu">
+              <label for="s3-cgu">
                 I have read and accept the<a href="/en/terms-and-conditions">&nbsp;terms and conditions&nbsp;</a>
                 and I consent to the collection and processing of my personal health data in the context of the Medicaim
                 services.
               </label>
             </div>
             <div class="form-check checkbox animated fadeInLeft">
-              <input class="form-check-input" type="checkbox" name="gdpr" id="s0-26-29-gdpr">
-              <label for="s0-26-29-gdpr">
+              <input class="form-check-input" type="checkbox" name="gdpr" id="s3-gdpr">
+              <label for="s3-gdpr">
                 I am aware that Medicaim may use my information to promote its offers. I can object by checking the
                 box opposite.
               </label>
             </div> -->
           </form>
-          <div class="submit-back d-none">
+          <div class="submit-back" id="s3-return">
             <span>Return</span>
           </div>
-          <div class="submit-next animated fadeInRight d-none">
+          <div class="submit-next animated fadeInRight d-none" id="s3-continue">
             <span>Continue</span>
           </div>
         </div>
       </div>
-      <div class="tab-pane active form-box col-12 col-sm-12 col-md-12 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2" id="s0-26-step-4">
+      <div class="d-none tab-pane active form-box col-12 col-sm-12 col-md-12 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2" id="form-s4">
         <div class="box-container" id="s0-26-31-boxForm">
           <h2>Destinations</h2>
-          <form class="destanddate" id="s0-26-31-stepForm">
+          <form class="destanddate" id="s4-stepForm">
             <div class="form-check animated fadeInLeft">
               <input class="form-check-input" type="radio" name="destination" id="los-cabos" value="los-cabos">
               <label class="form-check-label" for="los-cabos">Los Cabos, Baja California Sur</label>
@@ -562,17 +562,18 @@
             <h2>Preferred departure date</h2>
             <div class="form-check animated fadeInLeft">
               <input class="form-check-input" type="radio" name="date" id="dateindiff" value="indifferent">
-              <label class="form-check-label" for="dateindiff">Indifférent</label>
+              <label class="form-check-label" for="dateindiff">Indifferent</label>
             </div>
             <div class="form-check animated fadeInRight">
               <input class="form-check-input" type="radio" name="date" id="dateasap" value="asap">
               <label class="form-check-label" for="dateasap">As soon as possible</label>
             </div>
           </form>
-          <div class="submit-back d-none"><span>Return</span></div>
-          <div class="submit-next animated fadeInLeft mt-3"><span>Finalize my request</span></div>
+          <div class="submit-back" id="s4-return"><span>Return</span></div>
+          <div class="d-none submit-next animated fadeInLeft" id="s4-submit"><span>Finalize my request</span></div>
         </div>
       </div>
+      <div class="d-none h1 w-100 text-center" id="submitted-message">Request submitted!</div>
     </div>
   </div>
 
