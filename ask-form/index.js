@@ -114,6 +114,7 @@ $(document).ready(function(){
   });
   $('#s4-submit').click(function() {
     $('#form-s4').addClass('d-none');
+    $("#submitted-message").removeClass('d-none');
     // $('#form-s4').removeClass('d-none');
   });
 
