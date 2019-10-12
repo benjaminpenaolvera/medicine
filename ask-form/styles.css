@@ -66,7 +66,9 @@
         text-align: center;
         font-size: 18px;
         margin-bottom: 20px; }
+      .form-container .form-box .box-container .submit-back,
       .form-container .form-box .box-container .submit-next {
+        display: inline-block;
         margin-right: 20px;
         margin-bottom: 20px;
         padding: 5px 50px;
@@ -79,10 +81,15 @@
         color: #fff;
         transition: all .3s ease-in-out;
         cursor: pointer; }
+        .form-container .form-box .box-container .submit-back:hover,
         .form-container .form-box .box-container .submit-next:hover {
           color: #fff;
           background-color: #1257d5;
           text-decoration: none; }
+      .form-container .form-box .box-container .submit-back {
+        float: left; }
+      .form-container .form-box .box-container .submit-next {
+        float: right; }
       .form-container .form-box .box-container p {
         text-transform: uppercase;
         color: #0d3e98;
@@ -95,6 +102,7 @@
         padding-left: 70px; }
         .form-container .form-box .box-container p.dontknow {
           display: block;
+          padding-right: 30px;
           margin-top: 20px;
           text-align: right;
           text-decoration: underline;
