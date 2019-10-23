@@ -49,6 +49,8 @@ $(document).ready(function(){
   $('#s1-dontknow').click(function() {
     $('#form-s1').addClass('d-none');
     $('#form-s2').removeClass('d-none');
+    $('#step-1').removeClass('active');
+    $('#step-2').addClass('active');
   });
 
   // STEP 2
@@ -103,14 +105,20 @@ $(document).ready(function(){
   $('#s1-continue').click(function() {
     $('#form-s1').addClass('d-none');
     $('#form-s2').removeClass('d-none');
+    $('#step-1').removeClass('active');
+    $('#step-2').addClass('active');
   });
   $('#s2-continue').click(function() {
     $('#form-s2').addClass('d-none');
     $('#form-s3').removeClass('d-none');
+    $('#step-2').removeClass('active');
+    $('#step-3').addClass('active');
   });
   $('#s3-continue').click(function() {
     $('#form-s3').addClass('d-none');
     $('#form-s4').removeClass('d-none');
+    $('#step-3').removeClass('active');
+    $('#step-4').addClass('active');
   });
   $('#s4-submit').click(function() {
     $('#form-s4').addClass('d-none');
@@ -122,14 +130,19 @@ $(document).ready(function(){
   $('#s2-return').click(function() {
     $('#form-s2').addClass('d-none');
     $('#form-s1').removeClass('d-none');
+    $('#step-2').removeClass('active');
+    $('#step-1').addClass('active');
   });
   $('#s3-return').click(function() {
     $('#form-s3').addClass('d-none');
     $('#form-s2').removeClass('d-none');
+    $('#step-3').removeClass('active');
+    $('#step-2').addClass('active');
   });
   $('#s4-return').click(function() {
     $('#form-s4').addClass('d-none');
     $('#form-s3').removeClass('d-none');
+    $('#step-4').removeClass('active');
+    $('#step-3').addClass('active');
   });
-  
 });
