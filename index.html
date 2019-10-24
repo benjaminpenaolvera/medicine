@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <header class="menu">
+    <div class="container top-menu">
+      <div class="row">
+        <a href="javascript:void(0);" class="brand"><img src="./images/logo-medtrip.png"/></a>
+        <!-- <div class="float-right connect">
+          <a href="javascript:void(0);">CUSTOMER PLATFORM</a>
+          <a href="javascript:void(0);" class="d-none d-md-inline-block phone"><i class="fa fa-phone"></i>1 800 418 7147</a>
+        </div> -->
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="d-inline-block d-md-none btn phone"><i class="fa fa-phone"></i>1 800 418 7147</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="container">
+            <ul class="navbar-nav w-100 d-flex align-items-center justify-content-between">
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0);">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../medicine/about_us/index.html">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../medicine/services/index.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0);">Destinations</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../medicine/contact_us/index.html">Contact</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Other specialities
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Ophthalmology</a>
+                    <a class="dropdown-item" href="#">Obesity treatment</a>
+                    <a class="dropdown-item" href="#">Infectious diseases</a>
+                    <a class="dropdown-item" href="#">General practices</a>
+                  </div>
+                </li> -->
+              </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="headline">
+    <div class="banner col-12 d-flex justify-content-center align-items-center">
+      <p class="m-0">
+        Transforming your medical trip into a one of a kind experience.
+      </p>
+    </div>
+    <div class="container-fluid headline-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-8 headline-texts">
+            <h1>Discover Medical Tourism</h1>
+            <h2>
+              Visit the world's second most visited Medical Tourism
+              destination. Rest and enjoy your time as your recover
+              from your medical treatment.
+              Access the best of health everywhere, all the time.
+            </h2>
+          </div>
+          <div class="col-12 col-lg-8 headline-cards d-flex justify-content-between align-items-center flex-wrap">
+            <a href="./ask-form/index.html" class="info-card">
+              <div>
+                <p>Not sure about your medical diagnosis?</p>
+                <div class="image-container">
+                  <img src="./images/headline-card-1.svg" alt="">
+                </div>
+                <div class="card-footer">
+                  <button class="square-button">Get a<br>Second Opinion</button>
+                </div>
+              </div>
+            </a>
+            <a href="./ask-form/index.html" class="info-card">
+              <div>
+                <p>Concerned about your mental state?</p>
+                <div class="image-container">
+                  <img src="./images/headline-card-2.svg" alt="">
+                </div>
+                <div class="card-footer">
+                  <button class="square-button">Discover our hospitals<br> and procedures.</button>
+                </div>
+              </div>
+            </a>
+            <a href="./ask-form/index.html" class="info-card">
+              <div>
+                <p>Need a treatment and want to relax?</p>
+                <div class="image-container">
+                  <img src="./images/headline-card-3.svg" alt="">
+                </div>
+                <div class="card-footer">
+                  <button class="square-button">Arrange your<br>medical trip.</button>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid search-bar">
+    <div class="container">
+      <div class="row">
+        <form action="" class="col-12 col-md-12 col-sm-12 col-lg-10 offset-lg-1">
+          <div class="form-row">
+            <div class="form-group col-12 col-md-5 mb-3 mb-md-0">
+              <p>Medical Specialties...</p>
+              <select class="select-procedure custom-select">
+                <option selected>Select a procedure</option>
+                <option value="1">Plastic Surgery</option>
+                <option value="2">Cardiac Surgery</option>
+                <option value="3">Ophthalmology</option>
+                <option value="4">Oncology</option>
+                <option value="5">Fertility</option>
+                <option value="6">Gastrointestinal Surgery</option>
+                <option value="7">Traumatology</option>
+                <option value="8">Gynecology</option>
+                <option value="9">Odontolog</option>
+              </select>
+            </div>
+            <div class="form-group col-12 col-md-4 mb-3 mb-md-0">
+              <p>Destinations...</p>
+              <select class="select-destination custom-select">
+                <option selected>Select a destination</option>
+                <option value="1">Los Cabos, Baja California Sur</option>
+                <option value="2">Guanajuato, Guanajuato</option>
+                <option value="3">San Miguel de Allende, Guanajuato</option>
+                <option value="4">Guadalajara, Jalisco</option>
+                <option value="5">Colima, Colima</option>
+                <option value="6">CDMX, CDMX</option>
+                <option value="7">Riviera Maya, Quintana Roo</option>
+                <option value="8">Cancun, Quintana Roo</option>
+                <option value="9">Queretaro, Queretaro</option>
+                <option value="10">Tepic, Nayarit</option>
+                <option value="11">Puerto Vallarta, Jalisco</option>
+              </select>
+            </div>
+            <div class="form-group col-12 col-md-3 btn-container d-flex align-items-end">
+              <a href="javascript:void(0);" class="square-button">Search</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container articles">
+    <div class="row">
+      <div class="col-12"><h3>México's First Medical Tourism Operator</h3></div>
+      <div class="col-12 col-md-4 article-card">
+        <a href="javascript:void(0);">
+          <div class="image-container">
+            <img src="./images/article-1.jpg" alt="">
+          </div>
+          <div class="article-footer"><p>What is Medical Tourism?</p></div>
+        </a>
+      </div>
+      <div class="col-12 col-md-4 article-card">
+        <a href="javascript:void(0);">
+          <div class="image-container">
+            <img src="./images/article-2.jpg" alt="">
+          </div>
+          <div class="article-footer"><p>Medtrip: Quality and Security</p></div>
+        </a>
+      </div>
+      <div class="col-12 col-md-4 article-card">
+        <a href="javascript:void(0);">
+          <div class="image-container">
+            <img src="./images/article-3.jpg" alt="">
+          </div>
+          <div class="article-footer"><p>How does Medtrip work?</p></div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid banner stats">
+    <div class="container">
+      <div class="row justify-content-center">
+        <h3 class="col-12 col-lg-4">Medtrip by Numbers</h3>
+        <div class="nbr">
+          <span class="number">+4,000</span>
+          <span class="label">Medical and Tourism Service Providers</span>
+        </div>
+        <div class="nbr">
+          <span class="number">+13</span>
+          <span class="label">Medical Tourism Destinations in México</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container benefits">
+    <div class="row">
+      <div class="col-12 headline">
+        <h3>Your health is our priority</h3>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 benefit">
+        <div class="image-container">
+          <img src="./images/benefit-1.svg" alt="">
+        </div>
+        <h4>Network of professional medical and tourism providers</h4>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 benefit">
+        <div class="image-container">
+          <img src="./images/benefit-2.svg" alt="">
+        </div>
+        <h4>Internationally accredited hospitals and medical specialists</h4>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 benefit">
+        <div class="image-container">
+          <img src="./images/benefit-3.svg" alt="">
+        </div>
+        <h4>Logistic team dedicated to creating your personalized medical trip</h4>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 benefit">
+        <div class="image-container">
+          <img src="./images/benefit-4.svg" alt="">
+        </div>
+        <h4>Medical care following your medical procedure to ensure your full recovery</h4>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 benefit">
+        <div class="image-container">
+          <img src="./images/benefit-5.svg" alt="">
+        </div>
+        <h4>One-on-One attention in your native language from one of our Contact Center advisors</h4>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 benefit">
+        <div class="image-container">
+          <img src="./images/benefit-6.svg" alt="">
+        </div>
+        <h4>All our providers are approved by Medtrip's Quality Program and international certifications</h4>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid banner accreditations">
+    <div class="container">
+      <div class="row">
+        <h5 class="col-12">Medtrip's medical providers are highly acclaimed within Mexico and are internationally accredited and certified</h5>
+        <div class="accreditation col-4">
+          <div class="image-container">
+            <img src="./images/accreditation1-SiNaCeam.png" alt="">
+          </div>
+          <span class="name">SiNaCEAM</span>
+        </div>
+        <div class="accreditation col-4">
+          <div class="image-container">
+            <img src="./images/accreditation2-jci.png" alt="">
+          </div>
+          <span class="name">Joint Commission<br>International (JCI)</span>
+        </div>
+        <div class="accreditation col-4">
+          <div class="image-container">
+            <img src="./images/accreditation3-iso.png" alt="">
+          </div>
+          <span class="name">International Standards<br>Organization (ISO)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container popularcat">
+    <div class="row">
+      <h3 class="col-12">Top Medical Specialties</h3>
+      <a href="javascript:void(0);" class="col-12 col-md-4 category" data-toggle="modal" data-target="#plastic-modal">
+        <div class="image-container">
+          <img src='./images/ms1-plastic.jpg'></img>
+        </div>
+        <span class="name">Plastic Surgery</span>
+      </a>
+      <div class="modal fade" id="plastic-modal" tabindex="-1" role="dialog" aria-labelledby="plastic-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="plastic-modal-title">Plastic Surgery</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <p class="text-justify text-dark">
+                      Plastic surgery is a medical specialty involving operations which focus on the correction
+                      of the congenital process that requires repair or replacement due to the effects it has on
+                      the form and/or function of the human body. Mexico is currently the third leading-country
+                      for cosmetic plastic surgery in the world. The most common procedures are liposuction,
+                      mammoplasty (breast augmentation), and rhytidectomy (face lift).
+                    </p>
+                    <p>The field can be broken down into two main categories:</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <p class="h6">
+                      Reconstructive plastic surgery
+                    </p>
+                  </div>
+                  <div class="col-6">
+                    <p class="h6">Cosmetic plastic surgery</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <p class="text-justify text-dark">
+                      Restores or betters the function and corrects deformities caused by birth defects,
+                      trauma, or medical conditions and are typically considered medically necessary.
+                      Examples include cleft lip and palate repair, breast reconstruction, and surgery
+                      after burn injuries.
+                    </p>
+                  </div>
+                  <div class="col-6">
+                    <p class="text-justify text-dark">
+                      Targets primarily healthy patients interested in correcting physical alterations
+                      with the goal of obtaining a more refined facial and corporal structure. The
+                      repercussions pertain mainly to the mental and emotional stability of the patient.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="col-12 col-md-4 category" data-toggle="modal" data-target="#cardiac-modal">
+        <div class="image-container">
+          <img src='./images/ms2-cardiac.jpg'></img>
+        </div>
+        <span class="name">Cardiac Surgery</span>
+      </a>
+      <div class="modal fade" id="cardiac-modal" tabindex="-1" role="dialog" aria-labelledby="cardiac-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="cardiac-modal-title">Cardiac Surgery</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <p class="text-justify text-dark">
+                      Cardiac surgery, also known as heart surgery, corrects life-threatening conditions
+                      by performing surgical operations on the heart which, depending on the condition,
+                      can either be open-heart surgery or minimally invasive surgery. Cardiovascular
+                      diseases are the leading cause of death in the U.S., examples include heart defect
+                      repair, coronary artery bypass, and the use or implantation of ventricular assist
+                      devices (VADs).
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="col-12 col-md-4 category" data-toggle="modal" data-target="#ophthalmology-modal">
+        <div class="image-container">
+          <img src='./images/ms3-ophthalmology.jpg'></img>
+        </div>
+        <span class="name">Ophthalmology</span>
+      </a>
+      <div class="modal fade" id="ophthalmology-modal" tabindex="-1" role="dialog" aria-labelledby="ophthalmology-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ophthalmology-modal-title">Ophthalmology</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <p class="text-justify text-dark">
+                      Ophthalmology is the branch of medical science that studies the structure,
+                      functions, and diseases of the eye and corrects any abnormalities. The leading
+                      causes of blindness and low vision in the U.S. are primarily age-related diseases
+                      such as glaucoma, macular degeneration, cataracts, and diabetic retinopathy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="col-12 col-md-4 category" data-toggle="modal" data-target="#oncology-modal">
+        <div class="image-container">
+          <img src='./images/ms4-oncology.jpg'></img>
+        </div>
+        <span class="name">Oncology</span>
+      </a>
+      <div class="modal fade" id="oncology-modal" tabindex="-1" role="dialog" aria-labelledby="oncology-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="oncology-modal-title">Oncology</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <p class="text-justify text-dark">
+                      Oncology is the medical specialization that focuses on the diagnosis and treatment
+                      of cancer. The field can be broken down into three main categories: medical oncology,
+                      radiation oncology, and surgical oncology. Medical Oncology uses chemotherapy, hormone
+                      therapy and other medicinal options to treat cancer. Radiation Oncology treats cancer
+                      with controlled exposure of the human body to radiation. Surgical Oncology treats cancer
+                      through surgery and other medical procedures.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="col-12 col-md-4 category" data-toggle="modal" data-target="#fertility-modal">
+        <div class="image-container">
+          <img src='./images/ms5-fertility.jpeg'></img>
+        </div>
+        <span class="name">Fertility</span>
+      </a>
+      <div class="modal fade" id="fertility-modal" tabindex="-1" role="dialog" aria-labelledby="fertility-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="fertility-modal-title">Fertility Treatments</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <p class="text-justify text-dark">
+                      According to the U.S. Department of Health and Human Services Centers for Disease
+                      Control and Prevention, approximately 12% of women in the U.S. ages 15-44,
+                      regardless of marital status, present problems getting pregnant and/or carrying
+                      a baby to term. One third of infertility cases are caused by infertility problems
+                      in men. Determining which treatment is required depends on whether the reproductive
+                      problem is present in one or both partners but the two most common treatment
+                      options are artificial insemination, that has an effectiveness percent rate of
+                      15-20%, and egg donation, with an 80% effectiveness rate.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="col-12 col-md-4 category" data-toggle="modal" data-target="#gastro-modal">
+        <div class="image-container">
+          <img src='./images/ms6-gastrointestinal.jpg'></img>
+        </div>
+        <span class="name">Gastrointestinal Surgery</span>
+      </a>
+      <div class="modal fade" id="gastro-modal" tabindex="-1" role="dialog" aria-labelledby="gastro-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="gastro-modal-title">Gastrointestinal Surgery</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <p class="text-justify text-dark">
+                      Gastroenterology is a branch that focuses on the evaluation, diagnosis, planning
+                      and surgical practices that cures disorders of the digestive system.
+                      Gastrointestinal surgery is the surgical practice that treats and cures these
+                      disorders in the esophagus, stomach, small and large intestine, gallbladder,
+                      liver, and pancreas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="col-12 col-md-4 category" data-toggle="modal" data-target="#traumatology-modal">
+        <div class="image-container">
+          <img src='./images/ms7-traumatology.jpg'></img>
+        </div>
+        <span class="name">Traumatology</span>
+      </a>
+      <div class="modal fade" id="traumatology-modal" tabindex="-1" role="dialog" aria-labelledby="traumatology-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="traumatology-modal-title">Traumatology</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <p class="text-justify text-dark">
+                      Traumatology is the branch of medicine that focuses on the study, treatment, and
+                      prevention of physical injuries to the muscular system, which includes muscles,
+                      bones, ligaments, tendons and any related tissues. In most cases, these traumas
+                      are caused by accidents, such as a car wreck, and violent situations, like a
+                      gunshot wound. Other traumas can be caused by sports-related incidents.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="col-12 col-md-4 category" data-toggle="modal" data-target="#gynecology-modal">
+        <div class="image-container">
+          <img src='./images/ms8-gynecology.jpg'></img>
+        </div>
+        <span class="name">Gynecology</span>
+      </a>
+      <div class="modal fade" id="gynecology-modal" tabindex="-1" role="dialog" aria-labelledby="gynecology-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="gynecology-modal-title">Gynecology</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <p class="text-justify text-dark">
+                      Gynecology is the branch of physiology and medicine that focuses on the diagnosis
+                      and treatment of the diseases and disorders affecting the female body, primarily
+                      the reproductive system. Examples of disorders include endometriosis, interstitial
+                      cystitis, and uterine firbroids.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="col-12 col-md-4 category" data-toggle="modal" data-target="#odontology-modal">
+        <div class="image-container">
+          <img src='./images/ms9-odontology.jpg'></img>
+        </div>
+        <span class="name">Odontology</span>
+      </a>
+      <div class="modal fade" id="odontology-modal" tabindex="-1" role="dialog" aria-labelledby="odontology-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="odontology-modal-title">Odontology</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <p class="text-justify text-dark">
+                      Odontology is the medical specialty that focuses on the study of the diseases and
+                      structure of the teeth and their surrounding structure as well as the treatment,
+                      cure, and prevention of disorders. Examples include cavities, gingivitis and gum
+                      disease.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid testimonials">
+    <div class="container">
+      <div class="row">
+        <h3 class="col-12">Testimonies</h3>
+        <!-- Insert carousel here -->
+        <div id="testimonialsCarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <!-- <div class="content-container"> -->
+                <p class="testimonial">“The helpful guidance provided from start to finish by the Medtrip team exceeded my expectations. I would not hesitate to recommend them to anyone.”</p>
+                <p class="overview">– Claire L. Travelled from Iowa to Cancun.</p>
+              <!-- </div> -->
+            </div>
+            <div class="carousel-item">
+              <!-- <div class="content-container"> -->
+                <p class="testimonial">“The whole process was so easy. You guys took care of so much, literally all I had to go was go. And it was great because I didn’t have any stress or anxieties about where I was going, how I was getting there, who was going to pick me up, every part of it was just taken care of. And every bit of the service from the beginning to the end was just incredible.”</p>
+                <p class="overview">– Karina G. Travelled from California to Los Cabos.</p>
+              <!-- </div> -->
+            </div>
+            <div class="carousel-item">
+              <!-- <div class="content-container"> -->
+                <p class="testimonial">“When I wasn’t in the hospital room, my wife and I would take bus tours and visit castles and cathedrals. There wasn’t a day that went by in the three weeks that we didn’t thoroughly enjoy.”</p>
+                <p class="overview">– Christian W. Travelled from California to Guanajuato.</p>
+              <!-- </div> -->
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#testimonialsCarousel" role="button" data-slide="prev">
+            <span class="fa fa-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#testimonialsCarousel" role="button" data-slide="next">
+            <span class="fa fa-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="container-fluid">
+    <div class="footer-layer">
+      <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 contact">
+              <a href="javascript:void(0);" class="brand">
+                <img src="" alt="">
+              </a>
+              <h5>Simplifying <br class="d-none d-md-inline">medical tourism</h5>
+              <p>For more information, <br class="d-none d-md-inline">contact us by email, phone or on social networks.</p>
+              <div class="social-media">
+                <a href="javascript:void(0);"></a>
+                <a href="javascript:void(0);"></a>
+                <a href="javascript:void(0);"></a>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 linkcol">
+              <div class="info-container">
+                <p class="subtitle">Contact</p>
+                <p class="info">Contact Center Open 24/7</p>
+                <p class="info">Phone: 1 800 418 7147</p>
+                <p class="info">Mail: <a href="mailto:medtrip@scem.mx">medtrip@scem.mx</a></p>
+              </div>
+              <div class="languages-container">
+                <p class="subtitle">Social Media</p>
+                <p class="info">FB: <a href="https://www.facebook.com/medtripmexico">Medtrip Mexico</a></p>
+                <p class="info">Insta: <a href="https://www.instagram.com/medtripmexico/">@medtripmexico</a></p>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 linkcol">
+              <div class="link-list">
+                <p class="subtitle">Navigation</p>
+                <a href="/en/about">About us</a>
+                <a href="/en/hospitals-clinics">Hospitals and Clinics</a>
+                <a href="/en/our-doctors-network">Visit Mexico</a>
+              </div>
+            </div>
+            <!-- <div class="col-12 legal-terms">
+              <span class="copyright">© Medicaim 2019 - all rights reserved</span>
+              <p>
+                By using our website, you agree to our terms of use and privacy policy. Medicaim does not provide medical advice, diagnosis or
+                treatment. The information on the website has been posted to support, not replace, the relationship between a patient and their
+                physician.
+              </p>
+            </div> -->
+          </div>
+        </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
