@@ -169,11 +169,10 @@ nav {
   }
 
   .headline-container {
-    height: 80vh;
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 60px;
     color: #FFFFFF;
-    background-image: url(./images/who-are-we.png);
+    background-image: url(./images/headline.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -190,11 +189,25 @@ nav {
       z-index: 0;
     }
 
+    .container {
+
+      .row {
+
+        .hero-text{
+
+          p {
+            font-size: 18px;
+            font-family: 'Robot', sans-serif;
+          }
+        }
+      }
+    }
+
     h1 {
       font-family: 'Roboto', sans-serif;
       font-weight: 700;
-      font-size: 80px;
-      padding-top: 60vh;
+      font-size: 42px;
+      padding-top: 40%;
     }
 
     h2 {
@@ -254,26 +267,6 @@ nav {
         }
       }
     }
-  }
-}
-
-.content-text {
-  padding-left: 5%;
-  padding-top: 2%;
-
-  h4 {
-    color: #000;
-    font-weight: 200;
-  }
-
-  h5 {
-    color: #000;
-    font-weight: 200;
-  }
-
-  p {
-    color: #000;
-    font-size: 12px;
   }
 }
 
